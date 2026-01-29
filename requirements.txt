@@ -1,0 +1,50 @@
+requirements_content = """# ITLAS Requirements
+# Python 3.8+ required
+
+# Core dependencies
+scanpy>=1.9.0
+anndata>=0.8.0
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+
+# Machine Learning
+scikit-learn>=1.0.0
+xgboost>=1.5.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Optional: GPU support for Tahoe-x1
+# torch>=1.10.0
+"""
+
+print(requirements_content)
+```
+
+---
+
+**GitHub에서 직접 생성:**
+
+1. **Add file → Create new file**
+2. 파일명: `requirements.txt`
+3. 아래 내용 붙여넣기:
+```
+# ITLAS Requirements
+# Python 3.8+ required
+
+# Core dependencies
+scanpy>=1.9.0
+anndata>=0.8.0
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+
+# Machine Learning
+scikit-learn>=1.0.0
+xgboost>=1.5.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
