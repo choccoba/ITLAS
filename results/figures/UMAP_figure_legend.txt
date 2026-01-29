@@ -1,0 +1,91 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+Figure X. IT Signature Score와 NK Collapse의 UMAP 시각화
+UMAP Visualization of IT Signature Score and NK Collapse
+═══════════════════════════════════════════════════════════════════════════════
+
+(A) Disease Stage / 질환 단계
+────────────────────────────────────────────────────────────────────────────────
+[EN] UMAP embedding of 243,000 single cells from chronic HBV patients and 
+     healthy controls. Colors indicate disease stages: NL (green, normal 
+     liver), IT (blue, immune tolerant), IA (red, immune active), AR (orange, 
+     acute resolved), AC (purple, acute chronic). IT phase cells form a 
+     distinct cluster in the lower-central region of UMAP space, reflecting 
+     the unique immunological characteristics of immune tolerance.
+
+[KR] 만성 B형간염 환자와 정상 대조군의 243,000개 단일세포 UMAP embedding.
+     색상은 질환 단계를 나타냄: NL(녹색, 정상간), IT(파란색, 면역관용기), 
+     IA(빨간색, 면역활성기), AR(주황색, 관해기), AC(보라색, 급성악화기).
+     IT phase 세포가 UMAP 하단 중앙부에 독특한 cluster를 형성하며, 
+     이는 면역관용기의 고유한 면역학적 특성을 반영함.
+
+(B) IT Signature Score / IT 시그니처 점수
+────────────────────────────────────────────────────────────────────────────────
+[EN] IT Signature Score based on Mito-high cluster markers (Cluster 21, 23: 
+     MT-ATP6, KLF2, MT-ND4L, MT-CO3). Red indicates high IT signature 
+     (IT-like phenotype); blue indicates low IT signature (non-IT phenotype). 
+     The IT phase cell region (blue in panel A) corresponds precisely with 
+     high IT signature scores (red), suggesting mitochondrial stress and 
+     metabolic dysfunction as hallmarks of immune tolerance.
+     
+     Statistical significance: IT vs all other stages, p < 0.001 
+     (Mann-Whitney U test)
+
+[KR] Mito-high cluster (Cluster 21, 23) 마커 기반 IT Signature Score.
+     마커 유전자: MT-ATP6, KLF2, MT-ND4L, MT-CO3.
+     빨간색: 높은 IT signature (IT-like 표현형)
+     파란색: 낮은 IT signature (non-IT 표현형)
+     A 패널의 IT phase 영역(파란색)이 높은 IT signature(빨간색)와 정확히 일치하며,
+     이는 미토콘드리아 스트레스와 대사 이상이 면역관용의 핵심 특징임을 시사함.
+     
+     통계적 유의성: IT vs 모든 다른 단계, p < 0.001 (Mann-Whitney U test)
+
+(C) NK Collapse Score / NK 붕괴 점수
+────────────────────────────────────────────────────────────────────────────────
+[EN] NK Collapse Score derived from inverse expression of NK cell markers 
+     (CST7, SRGN, CXCR4, NR4A2, DUSP2). Blue (low values) indicates NK cell 
+     abundance and preserved immune surveillance; red (high values) indicates 
+     NK cell depletion and collapsed immune surveillance. 
+     
+     NL (normal) regions show blue coloring (NK preservation), while IT and 
+     disease stage regions show red coloring (NK collapse). This pattern 
+     supports the HBsAg-IL15Rβ-mTOR axis hypothesis (Yu et al., Cell Death 
+     Dis. 2025), wherein HBsAg binding to IL-15Rβ inhibits mTOR signaling, 
+     leading to NK cell metabolic dysfunction and functional exhaustion.
+
+[KR] NK cell 마커 (CST7, SRGN, CXCR4, NR4A2, DUSP2) 발현의 역수로 계산된 
+     NK Collapse Score.
+     파란색 (낮은 값): NK cell 풍부, 정상적인 면역감시 유지
+     빨간색 (높은 값): NK cell 결핍, 면역감시 기능 붕괴
+     
+     NL(정상) 영역은 파란색(NK 보존)을 보이는 반면, IT 및 질환 단계 영역은 
+     빨간색(NK collapse)을 보임. 이 패턴은 Yu et al. (Cell Death Dis. 2025)의 
+     HBsAg-IL15Rβ-mTOR axis 가설을 지지함. HBsAg가 IL-15Rβ에 결합하여 
+     mTOR 신호전달을 억제하고, 이로 인해 NK cell의 대사 기능장애와 
+     기능적 소진이 유발됨.
+
+═══════════════════════════════════════════════════════════════════════════════
+Key Findings / 핵심 발견
+═══════════════════════════════════════════════════════════════════════════════
+
+1. [EN] IT phase occupies a unique position in UMAP space, indicating 
+        distinct immunological characteristics
+   [KR] IT phase는 UMAP 공간에서 독특한 위치를 차지하며, 이는 고유한 
+        면역학적 특성을 나타냄
+
+2. [EN] IT Signature Score effectively identifies IT phase cells with high 
+        specificity (p < 0.001 vs all stages)
+   [KR] IT Signature Score는 IT phase 세포를 높은 특이도로 효과적으로 
+        식별함 (모든 단계 대비 p < 0.001)
+
+3. [EN] NK Collapse is prominent in IT phase, representing a core mechanism 
+        of immune tolerance through metabolic dysfunction
+   [KR] NK Collapse가 IT phase에서 현저하며, 이는 대사 기능장애를 통한 
+        면역관용 기전의 핵심을 나타냄
+
+4. [EN] These findings provide single-cell level evidence supporting the 
+        HBsAg-mediated NK cell dysfunction in chronic HBV infection
+   [KR] 이러한 발견은 만성 B형간염에서 HBsAg 매개 NK cell 기능장애에 대한 
+        단일세포 수준의 증거를 제공함
+
+═══════════════════════════════════════════════════════════════════════════════

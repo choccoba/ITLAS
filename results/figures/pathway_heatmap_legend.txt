@@ -1,0 +1,88 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+Figure X. Pathway Activity Across Disease Stages in Chronic HBV Infection
+═══════════════════════════════════════════════════════════════════════════════
+
+Heatmap showing Z-score normalized pathway activity across five disease stages
+of chronic HBV infection. Analysis performed on 243,000 single cells from 
+GSE182159 dataset.
+
+COLOR SCALE:
+- Red: Elevated pathway activity (Z-score > 0)
+- Blue: Reduced pathway activity (Z-score < 0)
+- White: Average activity (Z-score ≈ 0)
+
+DISEASE STAGES (columns):
+- NL: Normal Liver (healthy controls, n=42,579 cells)
+- IT: Immune Tolerant phase (n=49,179 cells)
+- IA: Immune Active phase (n=62,545 cells)
+- AR: Acute Resolved (n=45,452 cells)
+- AC: Acute Chronic (n=43,245 cells)
+
+PATHWAYS (rows):
+
+1. mTOR_signaling
+   Genes: MTOR, RPTOR, RICTOR, AKT1, PIK3CA, TSC1, TSC2, RHEB, EIF4EBP1, 
+          RPS6KB1, ULK1, PTEN
+   Pattern: Low in NL (-1.60), elevated in IT (+0.79) and disease stages
+   Significance: Central node in HBsAg-IL15Rβ-mTOR axis
+
+2. glycolysis
+   Genes: HK1, HK2, GPI, PFKM, ALDOA, GAPDH, PGK1, ENO1, PKM, LDHA, LDHB,
+          SLC2A1, SLC2A3
+   Pattern: Highest in NL (+1.05), progressively decreased in AC (-1.53)
+   Significance: Metabolic dysfunction in chronic infection
+
+3. oxidative_phosphorylation
+   Genes: MT-ND1-5, MT-CYB, MT-CO1-3, MT-ATP6, MT-ATP8
+   Pattern: Lowest in NL (-1.65), highest in IT (+0.97)
+   Significance: Mitochondrial stress signature; defines IT-exclusive 
+                 clusters 21 and 23
+
+4. nk_cell_cytotoxicity
+   Genes: PRF1, GZMA, GZMB, GZMK, GNLY, FASLG, IFNG, TNF, KLRK1, KLRD1,
+          NCR1, NCR3, CD226
+   Pattern: Highest in NL (+1.48), dramatically reduced in AC (-1.27)
+   Significance: NK cell functional collapse; hallmark of immune tolerance
+
+5. il15_signaling
+   Genes: IL15, IL15RA, IL2RB, IL2RG, JAK1, JAK3, STAT5A, STAT5B, SYK, LCK
+   Pattern: Low in NL (-0.40), elevated in IA (+0.66) and AR (+0.83)
+   Significance: Altered IL-15 axis; HBsAg binds IL-15Rβ (Yu et al. 2025)
+
+6. b_cell_differentiation
+   Genes: PAX5, BCL6, PRDM1, IRF4, XBP1, CD79A, CD79B, MS4A1, CD19, CD22,
+          JCHAIN, MZB1
+   Pattern: Highest in AC (+1.64), lowest in AR (-1.05)
+   Significance: B cell maturation arrest; IT-exclusive naive B cells
+
+─────────────────────────────────────────────────────────────────────────────────
+KEY OBSERVATIONS:
+─────────────────────────────────────────────────────────────────────────────────
+
+1. IT Phase Signature (column 2):
+   - OXPHOS markedly elevated (+0.97): Mitochondrial stress
+   - mTOR elevated (+0.79): Compensatory metabolic response
+   - NK cytotoxicity near baseline (+0.07): Functional impairment vs NL
+
+2. NL vs Disease Contrast:
+   - NL shows highest NK cytotoxicity (+1.48) and glycolysis (+1.05)
+   - Disease stages show progressive NK collapse and metabolic shift
+
+3. Disease Progression Pattern:
+   - AC shows most severe NK collapse (-1.27) and glycolysis deficit (-1.53)
+   - Suggests cumulative immune dysfunction with disease chronicity
+
+─────────────────────────────────────────────────────────────────────────────────
+CONCLUSION:
+─────────────────────────────────────────────────────────────────────────────────
+The pathway activity heatmap reveals distinct metabolic and immunological 
+signatures across HBV infection stages. The IT phase is characterized by 
+elevated OXPHOS (mitochondrial stress), maintained mTOR activity, and 
+reduced NK cell cytotoxicity compared to healthy controls. These findings 
+support the HBsAg-IL15Rβ-mTOR axis model of immune tolerance, wherein 
+HBsAg-mediated signaling disruption leads to NK cell metabolic dysfunction 
+and functional exhaustion.
+
+Reference: Yu Y, et al. Cell Death Dis. 2025
+═══════════════════════════════════════════════════════════════════════════════

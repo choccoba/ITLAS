@@ -1,0 +1,112 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+Figure X. Key Pathway Comparison Between IT Phase and Normal Liver (NL)
+═══════════════════════════════════════════════════════════════════════════════
+
+Boxplots comparing pathway activity scores between immune tolerant (IT) phase 
+(n=49,179 cells, blue) and normal liver controls (NL) (n=42,579 cells, green). 
+Statistical significance assessed by Mann-Whitney U test.
+
+─────────────────────────────────────────────────────────────────────────────────
+PANEL DESCRIPTIONS:
+─────────────────────────────────────────────────────────────────────────────────
+
+(A) mTOR_signaling (p=9.68e-108)
+    
+    Genes analyzed: MTOR, RPTOR, RICTOR, AKT1, PIK3CA, TSC1, TSC2, RHEB, 
+                    EIF4EBP1, RPS6KB1, ULK1, PTEN
+    
+    Observation: IT phase shows significantly higher mTOR signaling activity 
+                 compared to NL (median: IT > NL).
+    
+    Interpretation: Elevated mTOR activity in IT phase may represent a 
+                    compensatory metabolic response to chronic viral infection. 
+                    This finding is relevant to the HBsAg-IL15Rβ-mTOR axis, 
+                    where HBsAg binding to IL-15Rβ modulates downstream mTOR 
+                    signaling in immune cells (Yu et al., Cell Death Dis. 2025).
+
+─────────────────────────────────────────────────────────────────────────────────
+
+(B) glycolysis (p=2.37e-13)
+    
+    Genes analyzed: HK1, HK2, GPI, PFKM, ALDOA, GAPDH, PGK1, ENO1, PKM, 
+                    LDHA, LDHB, SLC2A1, SLC2A3
+    
+    Observation: IT phase shows slightly reduced glycolytic activity compared 
+                 to NL, though distributions largely overlap.
+    
+    Interpretation: Impaired glycolysis in IT phase reflects metabolic 
+                    dysfunction in tolerant immune cells. NK cells require 
+                    robust glycolysis for cytotoxic function; reduced 
+                    glycolytic capacity contributes to functional exhaustion.
+
+─────────────────────────────────────────────────────────────────────────────────
+
+(C) oxidative_phosphorylation (p=0.00e+00)
+    
+    Genes analyzed: MT-ND1, MT-ND2, MT-ND3, MT-ND4, MT-ND4L, MT-ND5, MT-CYB, 
+                    MT-CO1, MT-CO2, MT-CO3, MT-ATP6, MT-ATP8
+    
+    Observation: IT phase shows markedly elevated OXPHOS activity compared 
+                 to NL (median: ~3.8 vs ~3.3). Clear separation between 
+                 distributions.
+    
+    Interpretation: Elevated mitochondrial gene expression is the hallmark 
+                    of IT-exclusive clusters (Clusters 21, 23). This "Mito-high" 
+                    signature indicates mitochondrial stress and metabolic 
+                    reprogramming, potentially reflecting a shift from 
+                    glycolysis to oxidative metabolism in dysfunctional 
+                    immune cells.
+
+─────────────────────────────────────────────────────────────────────────────────
+
+(D) nk_cell_cytotoxicity (p=0.00e+00)
+    
+    Genes analyzed: PRF1, GZMA, GZMB, GZMK, GNLY, FASLG, IFNG, TNF, KLRK1, 
+                    KLRD1, NCR1, NCR3, CD226
+    
+    Observation: IT phase shows substantially reduced NK cytotoxicity compared 
+                 to NL (median: ~0.4 vs ~0.75). Distribution shifted downward.
+    
+    Interpretation: Reduced NK cell cytotoxicity is a defining feature of 
+                    immune tolerance in chronic HBV infection. This functional 
+                    collapse, evidenced by decreased expression of cytotoxic 
+                    effector molecules (perforin, granzymes, GNLY), enables 
+                    viral persistence without triggering hepatocyte destruction.
+
+─────────────────────────────────────────────────────────────────────────────────
+SUMMARY OF KEY FINDINGS:
+─────────────────────────────────────────────────────────────────────────────────
+
+                        NL              IT              Change
+─────────────────────────────────────────────────────────────────────────────────
+mTOR signaling         Low             High            ↑ Increased
+glycolysis             High            Moderate        ↓ Decreased  
+OXPHOS                 Moderate        High            ↑ Increased
+NK cytotoxicity        High            Low             ↓ Decreased
+─────────────────────────────────────────────────────────────────────────────────
+
+BIOLOGICAL SIGNIFICANCE:
+
+The IT phase of chronic HBV infection is characterized by a distinct metabolic 
+and functional signature:
+
+1. Metabolic Shift: Increased OXPHOS with decreased glycolysis suggests a 
+   metabolic reprogramming away from the glycolytic phenotype required for 
+   effective immune responses.
+
+2. NK Cell Dysfunction: Dramatic reduction in NK cytotoxicity markers confirms 
+   functional exhaustion of NK cells, a key mechanism of immune tolerance.
+
+3. mTOR Pathway Activation: Elevated mTOR signaling may represent either a 
+   compensatory response or a direct consequence of HBsAg-mediated IL-15Rβ 
+   engagement.
+
+These findings provide single-cell level evidence supporting the immunometabolic 
+basis of immune tolerance in chronic HBV infection.
+
+─────────────────────────────────────────────────────────────────────────────────
+Statistical Analysis: Mann-Whitney U test, two-sided
+Dataset: GSE182159 (Zhang et al., Gut 2023)
+Reference: Yu Y, et al. Cell Death Dis. 2025 (HBsAg/IL-15Rβ/mTOR axis)
+═══════════════════════════════════════════════════════════════════════════════

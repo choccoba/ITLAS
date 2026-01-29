@@ -1,0 +1,103 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+Table X. Statistical Comparison of Pathway Activity Between IT Phase and 
+         Normal Liver (NL) in Chronic HBV Infection
+═══════════════════════════════════════════════════════════════════════════════
+
+Mean pathway activity scores compared between immune tolerant (IT) phase 
+(n=49,179 cells) and normal liver controls (NL) (n=42,579 cells) using 
+Mann-Whitney U test.
+
+─────────────────────────────────────────────────────────────────────────────────
+TABLE COLUMNS:
+─────────────────────────────────────────────────────────────────────────────────
+
+- Pathway: Name of the biological pathway analyzed
+- IT_mean: Mean pathway activity score in IT phase cells
+- NL_mean: Mean pathway activity score in normal liver cells  
+- Diff: Difference in mean scores (IT_mean - NL_mean)
+- p_value: Statistical significance (Mann-Whitney U test)
+- Significant: *** p<0.001, ** p<0.01, * p<0.05, ns = not significant
+
+─────────────────────────────────────────────────────────────────────────────────
+RESULTS INTERPRETATION:
+─────────────────────────────────────────────────────────────────────────────────
+
+1. mTOR_signaling (Diff = +0.022, p = 9.68e-108 ***)
+   
+   Direction: IT > NL (Increased)
+   
+   The IT phase shows significantly elevated mTOR signaling compared to 
+   normal liver. Although the absolute difference is modest (+0.022), 
+   the highly significant p-value reflects consistent upregulation across 
+   ~49,000 IT phase cells. This finding aligns with the HBsAg-IL15Rβ-mTOR 
+   axis model, suggesting altered metabolic signaling during immune tolerance.
+
+─────────────────────────────────────────────────────────────────────────────────
+
+2. glycolysis (Diff = -0.016, p = 2.37e-13 ***)
+   
+   Direction: IT < NL (Decreased)
+   
+   Glycolytic activity is significantly reduced in IT phase compared to 
+   normal liver. Effective immune cell function, particularly NK cell 
+   cytotoxicity, requires robust glycolysis. The observed reduction 
+   supports the hypothesis that metabolic impairment contributes to 
+   immune tolerance in chronic HBV infection.
+
+─────────────────────────────────────────────────────────────────────────────────
+
+3. oxidative_phosphorylation (Diff = +0.420, p < 1e-300 ***)
+   
+   Direction: IT > NL (Markedly Increased)
+   
+   OXPHOS activity is dramatically elevated in IT phase, with the largest 
+   absolute difference among all pathways (+0.420). This "Mito-high" 
+   signature is the defining characteristic of IT-exclusive cell populations 
+   (Clusters 21, 23) and indicates mitochondrial stress. The metabolic shift 
+   from glycolysis to oxidative phosphorylation may represent a dysfunctional 
+   state associated with immune cell exhaustion.
+
+─────────────────────────────────────────────────────────────────────────────────
+
+4. nk_cell_cytotoxicity (Diff = -0.200, p < 1e-300 ***)
+   
+   Direction: IT < NL (Markedly Decreased)
+   
+   NK cell cytotoxicity is substantially reduced in IT phase, with a 
+   large effect size (-0.200). This represents ~27% reduction compared 
+   to normal liver (0.544 vs 0.745). The dramatic decrease in cytotoxic 
+   effector gene expression (PRF1, GZMA, GZMB, GNLY) confirms NK cell 
+   functional collapse as a hallmark of immune tolerance.
+
+─────────────────────────────────────────────────────────────────────────────────
+SUMMARY:
+─────────────────────────────────────────────────────────────────────────────────
+
+Pathway                    | Direction | Effect Size | Biological Meaning
+─────────────────────────────────────────────────────────────────────────────────
+mTOR_signaling            | ↑         | Small       | Metabolic signaling altered
+glycolysis                | ↓         | Small       | Energy metabolism impaired
+oxidative_phosphorylation | ↑↑        | Large       | Mitochondrial stress
+nk_cell_cytotoxicity      | ↓↓        | Large       | Immune function collapsed
+─────────────────────────────────────────────────────────────────────────────────
+
+CONCLUSION:
+
+All four key pathways show statistically significant differences between IT 
+phase and normal liver (p < 0.001). The most pronounced changes are observed 
+in oxidative phosphorylation (increased) and NK cell cytotoxicity (decreased), 
+indicating that mitochondrial stress and NK functional collapse are the 
+primary features distinguishing IT phase from healthy liver tissue.
+
+These findings provide quantitative evidence for the immunometabolic basis 
+of immune tolerance in chronic HBV infection, supporting the model wherein 
+HBsAg-mediated disruption of IL-15 signaling leads to metabolic dysfunction 
+and subsequent NK cell exhaustion.
+
+─────────────────────────────────────────────────────────────────────────────────
+Statistical Method: Mann-Whitney U test (two-sided)
+Multiple testing: Not corrected (exploratory analysis)
+Dataset: GSE182159, 243,000 single cells
+Reference: Yu Y, et al. Cell Death Dis. 2025
+═══════════════════════════════════════════════════════════════════════════════

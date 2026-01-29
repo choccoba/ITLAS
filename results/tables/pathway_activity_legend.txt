@@ -1,0 +1,60 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+Table X. Pathway Activity Across HBV Infection Stages
+═══════════════════════════════════════════════════════════════════════════════
+
+Mean pathway activity scores calculated for each disease stage using single-cell
+gene expression data from 243,000 cells (GSE182159). Statistical significance
+tested using Mann-Whitney U test (IT vs NL).
+
+─────────────────────────────────────────────────────────────────────────────────
+Pathway                    | IT vs NL Direction | p-value      | Interpretation
+─────────────────────────────────────────────────────────────────────────────────
+mTOR_signaling            | IT > NL (↑)        | 9.68e-108    | Compensatory mTOR activation
+                          |                     |              | in response to metabolic stress
+─────────────────────────────────────────────────────────────────────────────────
+glycolysis                | IT < NL (↓)        | 2.37e-13     | Impaired glycolytic metabolism
+                          |                     |              | consistent with NK dysfunction
+─────────────────────────────────────────────────────────────────────────────────
+oxidative_phosphorylation | IT > NL (↑)        | <1e-300      | Mitochondrial stress signature
+                          |                     |              | (Mito-high clusters 21, 23)
+─────────────────────────────────────────────────────────────────────────────────
+nk_cell_cytotoxicity      | IT < NL (↓)        | <1e-300      | NK cell functional collapse
+                          |                     |              | supporting immune tolerance
+─────────────────────────────────────────────────────────────────────────────────
+il15_signaling            | IT > NL (↑)        | 4.09e-30     | Altered IL-15 signaling axis
+                          |                     |              | (HBsAg-IL15Rβ interaction)
+─────────────────────────────────────────────────────────────────────────────────
+b_cell_differentiation    | IT > NL (↑)        | 2.59e-09     | B cell maturation arrest
+                          |                     |              | (Naive B accumulation)
+─────────────────────────────────────────────────────────────────────────────────
+
+Key Findings:
+
+1. OXIDATIVE PHOSPHORYLATION (OXPHOS)
+   - Dramatically elevated in IT phase (Z-score: +0.97)
+   - Reflects mitochondrial stress in IT-exclusive clusters (21, 23)
+   - Indicates metabolic reprogramming during immune tolerance
+
+2. NK CELL CYTOTOXICITY  
+   - Markedly reduced in IT phase compared to NL (Z-score: NL +1.48 → IT +0.07)
+   - Confirms NK cell functional collapse as hallmark of IT phase
+   - Supports HBsAg-mediated NK suppression hypothesis
+
+3. GLYCOLYSIS
+   - Reduced in IT phase relative to NL
+   - Consistent with impaired metabolic function in tolerant immune cells
+   - Links to mTOR-glycolysis axis dysfunction (Yu et al. 2025)
+
+4. mTOR SIGNALING
+   - Elevated in IT phase
+   - May represent compensatory response to metabolic stress
+   - Key node in HBsAg-IL15Rβ-mTOR pathway
+
+Clinical Implications:
+- Pathway signatures can distinguish IT phase from other disease stages
+- OXPHOS and NK cytotoxicity are most discriminative markers
+- Potential therapeutic targets: mTOR modulators, metabolic enhancers
+
+Reference: Yu Y, et al. Cell Death Dis. 2025 - HBsAg/IL-15Rβ/mTOR axis
+═══════════════════════════════════════════════════════════════════════════════

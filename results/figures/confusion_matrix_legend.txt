@@ -1,0 +1,107 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+Figure X. Confusion Matrix for Multi-class Phase Classification Using XGBoost
+═══════════════════════════════════════════════════════════════════════════════
+
+Confusion matrices showing the performance of XGBoost classifier in predicting 
+HBV infection stages from single-cell transcriptomic features. Model trained 
+on 194,400 cells (80%) and tested on 48,600 cells (20%).
+
+─────────────────────────────────────────────────────────────────────────────────
+PANELS:
+─────────────────────────────────────────────────────────────────────────────────
+
+(Left) Confusion Matrix - Raw Counts
+    Shows the absolute number of cells classified into each predicted category.
+    Diagonal elements represent correct classifications.
+    Color intensity reflects cell counts (darker = more cells).
+
+(Right) Confusion Matrix - Normalized (Row-wise)
+    Shows the proportion of cells from each true stage classified into each 
+    predicted category. Each row sums to 100%.
+    Diagonal elements represent classification accuracy per stage.
+
+─────────────────────────────────────────────────────────────────────────────────
+CLASSIFICATION PERFORMANCE BY STAGE:
+─────────────────────────────────────────────────────────────────────────────────
+
+True Stage | Accuracy | Primary Misclassification | Interpretation
+─────────────────────────────────────────────────────────────────────────────────
+NL         | 55.67%   | IA (22.64%)              | Best classified; distinct
+           |          |                           | healthy liver signature
+─────────────────────────────────────────────────────────────────────────────────
+IA         | 53.04%   | AR (14.33%), IT (11.46%) | Well classified; active
+           |          |                           | immune signature distinct
+─────────────────────────────────────────────────────────────────────────────────
+AR         | 39.48%   | IA (23.70%), IT (14.64%) | Moderate; transitional
+           |          |                           | stage between IA and NL
+─────────────────────────────────────────────────────────────────────────────────
+AC         | 33.15%   | IA (26.29%), AR (16.39%) | Lower accuracy; shares
+           |          |                           | features with active stages
+─────────────────────────────────────────────────────────────────────────────────
+IT         | 32.99%   | IA (30.01%), AR (13.73%) | Lowest accuracy; frequently
+           |          |                           | misclassified as IA
+─────────────────────────────────────────────────────────────────────────────────
+
+─────────────────────────────────────────────────────────────────────────────────
+KEY OBSERVATIONS:
+─────────────────────────────────────────────────────────────────────────────────
+
+1. BEST PERFORMANCE: NL and IA stages
+   - NL (55.67%): Healthy liver has the most distinct transcriptomic profile
+   - IA (53.04%): Active immune response creates identifiable signature
+   - Both stages represent "extreme" phenotypes (healthy vs active inflammation)
+
+2. MODERATE PERFORMANCE: AR stage (39.48%)
+   - Transitional stage between active disease and resolution
+   - Shares features with both IA (23.70% misclassified) and IT (14.64%)
+
+3. LOWER PERFORMANCE: AC and IT stages (33.15% and 32.99%)
+   - IT frequently misclassified as IA (30.01%): Both represent chronic 
+     infection states with overlapping immune signatures
+   - AC misclassified as IA (26.29%): Acute exacerbation shares inflammatory 
+     features with immune active phase
+
+4. BIOLOGICAL INTERPRETATION:
+   - The IT → IA misclassification pattern suggests that immune tolerance 
+     shares cellular features with immune activation at the single-cell level
+   - This may reflect heterogeneous populations within IT phase, including 
+     cells transitioning toward immune activation
+   - The difficulty distinguishing IT from IA supports the clinical observation 
+     that IT patients can progress to IA phase
+
+─────────────────────────────────────────────────────────────────────────────────
+MODEL DETAILS:
+─────────────────────────────────────────────────────────────────────────────────
+
+Algorithm: XGBoost (Extreme Gradient Boosting)
+Parameters: n_estimators=100, max_depth=5, learning_rate=0.1
+
+Features (n=15):
+- IT Signature Scores (9): IT_cluster_21, IT_cluster_23, IT_cluster_25, 
+  IT_nk_collapse, IT_IT_signature, IT_score_v2, IT_score_v3, IT_score_v4, 
+  IT_signature_final
+- Pathway Scores (6): PW_mTOR_signaling, PW_glycolysis, 
+  PW_oxidative_phosphorylation, PW_nk_cell_cytotoxicity, 
+  PW_il15_signaling, PW_b_cell_differentiation
+
+Overall Performance:
+- Accuracy: 43.4% (vs 20% random baseline for 5 classes)
+- Weighted F1: 42.9%
+- Cross-validation: 43.3% ± 0.2% (5-fold)
+
+─────────────────────────────────────────────────────────────────────────────────
+CONCLUSION:
+─────────────────────────────────────────────────────────────────────────────────
+
+The XGBoost classifier achieves >2x random baseline performance in distinguishing 
+five HBV infection stages using immunometabolic features. NL and IA stages are 
+most accurately classified, while IT shows substantial overlap with IA, 
+reflecting the biological continuum between immune tolerance and activation. 
+Binary classification (IT vs non-IT) is expected to achieve higher accuracy 
+by simplifying the prediction task.
+
+─────────────────────────────────────────────────────────────────────────────────
+Dataset: GSE182159, n=243,000 cells
+Training/Test split: 80%/20% stratified
+═══════════════════════════════════════════════════════════════════════════════
