@@ -1,0 +1,39 @@
+
+================================================================================
+IT-IMMUNOPATHOGENESIS THEORY: Foundation Model-Based Single-Cell Analysis
+================================================================================
+
+CENTRAL HYPOTHESIS:
+The IT (Immune Tolerant) phase of chronic HBV infection is characterized by
+a unique immunological landscape with three core features:
+
+1. NK CELL DEPLETION
+   - Mechanism: HBsAg → IL-15Rβ downregulation → mTOR suppression
+   - Evidence: Clusters 15, 18 (NL-dominant) show log2OR < -3 in IT
+   - Biological impact: Loss of innate immune surveillance
+
+2. METABOLIC REPROGRAMMING  
+   - Mechanism: OXPHOS↑ + Glycolysis↓ in IT-exclusive cells
+   - Evidence: Cluster 9 KEGG enrichment for oxidative phosphorylation
+   - Biological impact: Cellular quiescence, reduced effector function
+
+3. T CELL FUNCTIONAL IMPAIRMENT
+   - Mechanism: Chronic antigen exposure → exhaustion/tolerance
+   - Evidence: Clusters 20, 22, 23 elevated in IT phase
+   - Biological impact: Failed viral clearance, immune tolerance
+
+DISEASE PROGRESSION MODEL:
+
+  NL (Normal) → IT (Tolerant) → IA/AR (Active) → CR (Resolved)
+      ↓              ↓              ↓               ↓
+  Homeostasis   NK depletion    NK recovery    Autoimmune-like
+                OXPHOS shift    Inflammation   Viral clearance
+                T tolerance     T activation   Immune reactivation
+
+THERAPEUTIC IMPLICATIONS:
+1. IL-15 agonist therapy to restore NK function
+2. Metabolic modulators to reverse OXPHOS-dependent quiescence  
+3. Checkpoint inhibitors to reverse T cell exhaustion
+4. Combination approach targeting multiple pathways
+
+================================================================================

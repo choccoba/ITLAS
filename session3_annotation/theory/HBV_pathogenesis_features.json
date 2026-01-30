@@ -1,0 +1,48 @@
+{
+  "CR_effector_expansion": {
+    "description": "Massive expansion of effector cells during viral clearance",
+    "mechanism": "Immune reactivation for HBV elimination",
+    "clusters": [
+      "9",
+      "14",
+      "8",
+      "5"
+    ],
+    "evidence": "Log2_OR = -4.5 ~ -6.9 (IT vs others), KEGG autoimmune pathways"
+  },
+  "IT_monocyte_expansion": {
+    "description": "Tolerogenic monocyte accumulation in IT phase",
+    "mechanism": "Immunosuppressive environment maintenance",
+    "clusters": [
+      "20"
+    ],
+    "evidence": "Log2_OR = +2.50, IT = 2.21% vs Others = 0.40%"
+  },
+  "CR_metabolic_shift": {
+    "description": "OXPHOS elevation in CR-specific CD4+ T cells",
+    "mechanism": "High energy demand for effector function",
+    "clusters": [
+      "9"
+    ],
+    "evidence": "KEGG: Oxidative phosphorylation enriched"
+  },
+  "CR_autoimmune_response": {
+    "description": "Strong autoimmune signatures during viral clearance",
+    "mechanism": "Collateral immune activation for HBV elimination",
+    "clusters": [
+      "14"
+    ],
+    "evidence": "KEGG: GVHD, T1D, thyroiditis, allograft rejection"
+  },
+  "NK_dynamics": {
+    "description": "NK cell redistribution across disease stages",
+    "mechanism": "HBsAg-mediated IL-15R\u03b2/mTOR suppression in IT",
+    "clusters": [
+      "6",
+      "10",
+      "11",
+      "18"
+    ],
+    "evidence": "Stage-dependent NK proportion changes"
+  }
+}

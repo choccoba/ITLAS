@@ -1,0 +1,48 @@
+
+================================================================================
+HBV IMMUNOPATHOGENESIS MODEL: Foundation Model-Based Single-Cell Analysis
+================================================================================
+
+CENTRAL FINDING:
+Chronic HBV infection progression is characterized by dynamic immune cell
+redistribution, with NK cell depletion and compensatory adaptive immune
+activation during viral clearance.
+
+1. NK CELL PROGRESSIVE DEPLETION
+   - NL: 34.4% → IT: 25.0% → IA: 15.1% → CR: 6.7%
+   - Mechanism: HBsAg → IL-15Rβ↓ → mTOR suppression
+   - Key clusters: C6, C10, C11, C18
+
+2. IT-PHASE TOLEROGENIC ENVIRONMENT
+   - C20 Monocytes expansion (Log2_OR = +2.50)
+   - Immunosuppressive monocyte accumulation
+   - Maintains viral persistence without liver damage
+
+3. CR-PHASE EFFECTOR EXPLOSION
+   - C9 CD4+ T cells (Log2_OR = -6.91 in IT vs others)
+   - C14 B cells with autoimmune signatures
+   - KEGG: GVHD, T1D, thyroiditis, allograft rejection
+   - Metabolic shift: OXPHOS↑ for high effector demand
+
+4. ADAPTIVE IMMUNITY COMPENSATES NK LOSS
+   - NK depletion in CR (6.7%) compensated by:
+   - CD4+ T cells (C9): OXPHOS-driven effector function
+   - B cells (C14): Autoimmune-like antibody response
+   - CD8+ T cells (C5, C8): Cytotoxic activity
+
+DISEASE PROGRESSION MODEL:
+
+  NL (Normal)  →  IT (Tolerant)  →  IA/AR (Active)  →  CR (Resolved)
+      ↓               ↓                  ↓                  ↓
+  NK: 34.4%       NK: 25.0%          NK: 15-23%         NK: 6.7%
+  Homeostasis    Tolerance         Inflammation      Viral clearance
+                 C20 Mono↑         Liver damage      C9,C14 explosion
+                                                     Autoimmune sig↑
+
+THERAPEUTIC IMPLICATIONS:
+1. IT phase: IL-15 agonist to restore NK function
+2. IT phase: Target tolerogenic monocytes (C20)
+3. CR transition: Monitor autoimmune complications
+4. Combination: NK restoration + checkpoint inhibitors
+
+================================================================================
