@@ -1,0 +1,16 @@
+﻿Gene,Lineage,Tissue,NL->IT,NL->IA,NL->AR,IA vs AR,IA vs AR Direction,Pattern
+DNMT1,PlasmaB,Liver,(t)+161.5% (p=0.082),*+237.0% (p=0.009),+25.6% (p=0.548),*-62.7% (p=0.036),IA higher,IT-inherited
+FOXP3,CD4_T,Liver,(t)+153.7% (p=0.093),*+255.0% (p=0.004),+50.4% (p=0.548),*-57.6% (p=0.036),IA higher,IT-inherited
+TYROBP,PlasmaB,Blood,*+910.8% (p=0.008),*+774.6% (p=0.016),+170.8% (p=0.393),(t)-69.0% (p=0.057),IA higher,IT-inherited
+FOXP3,CD8_T,Blood,+358.8% (p=0.265),*+1053.4% (p=0.018),+295.3% (p=0.127),(t)-65.7% (p=0.057),IA higher,IA-emergent
+TIGIT,Myeloid,Blood,from_zero (p=0.180),*from_zero (p=0.011),from_zero (p=0.302),*-98.7% (p=0.050),IA higher,IA-emergent
+GNLY,CD8_T,Liver,+88.1% (p=0.937),+1.8% (p=0.931),*+128.7% (p=0.024),(t)+124.6% (p=0.071),AR higher,AR-advantage
+GNLY,CD8_T,Blood,+9.6% (p=0.691),-37.6% (p=0.556),*+155.8% (p=0.036),(t)+310.0% (p=0.057),AR higher,AR-advantage
+GNLY,PlasmaB,Liver,-100.0% (p=0.223),+222.0% (p=0.908),*+11297.2% (p=0.022),*+3439.1% (p=0.026),AR higher,AR-advantage
+GZMK,CD4_T,Liver,(t)+23.3% (p=0.093),-0.1% (p=0.792),*+42.7% (p=0.024),(t)+42.7% (p=0.071),AR higher,AR-advantage
+GZMK,CD8_T,Liver,(t)+28.7% (p=0.065),-0.5% (p=1.000),*+35.0% (p=0.024),*+35.7% (p=0.036),AR higher,AR-advantage
+FCER1G,PlasmaB,Blood,*+514.8% (p=0.021),(t)+437.3% (p=0.065),+92.9% (p=0.230),(t)-64.1% (p=0.057),IA higher,IT-specific
+FCER1G,B,Liver,+149.3% (p=0.486),(t)+223.9% (p=0.076),-100.0% (p=0.377),*-100.0% (p=0.033),IA higher,Complex
+GZMB,CD8_T,Liver,+4.6% (p=0.699),-40.7% (p=0.126),+37.5% (p=0.262),*+131.9% (p=0.036),AR higher,Complex
+LAYN,NK,Blood,-38.4% (p=0.833),+62.9% (p=0.902),-96.8% (p=0.341),*-98.1% (p=0.050),IA higher,Complex
+TYROBP,B,Liver,+7.1% (p=1.000),-59.8% (p=0.429),(t)-100.0% (p=0.059),*-100.0% (p=0.033),IA higher,Complex

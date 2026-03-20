@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="920" viewBox="0 0 680 920" font-family="Arial, Helvetica, sans-serif">
+  <style>
+    .title { font-size: 13px; font-weight: 700; fill: #000; }
+    .subtitle { font-size: 10px; font-weight: 400; fill: #333; }
+    .label { font-size: 11px; font-weight: 700; fill: #000; }
+    .genes { font-size: 9.5px; font-weight: 400; fill: #222; font-style: italic; }
+    .tissue { font-size: 8.5px; font-weight: 700; fill: #fff; }
+    .tissue-both { font-size: 8.5px; font-weight: 700; fill: #000; }
+    .note { font-size: 9px; font-weight: 400; fill: #555; }
+    .arrow-text { font-size: 9px; font-weight: 400; fill: #666; }
+    .blocked { font-size: 11px; font-weight: 700; fill: #000; }
+    .layer-num { font-size: 12px; font-weight: 700; fill: #fff; }
+    .layer-num-dark { font-size: 12px; font-weight: 700; fill: #000; }
+    .header { font-size: 11px; font-weight: 600; fill: #000; }
+    .legend-text { font-size: 8.5px; fill: #333; }
+  </style>
+
+  <!-- Title -->
+  <text x="340" y="28" text-anchor="middle" class="title">Supplementary Figure S3. Six Concurrent Transcriptomic Patterns</text>
+  <text x="340" y="42" text-anchor="middle" class="title">Associated with Effector Suppression in the IT Phase</text>
+
+  <!-- Active Immune Engagement Box (top) -->
+  <rect x="80" y="62" width="520" height="50" rx="4" fill="none" stroke="#000" stroke-width="1.5"/>
+  <text x="340" y="80" text-anchor="middle" class="header">Active immune engagement despite effector blockade</text>
+  <text x="340" y="96" text-anchor="middle" class="genes">HLA-DPB1↑ (36/36)  |  JAK1 pan-lineage↑ (33 sig tests)  |  MTOR↑  |  Type I IFN pathway↑ (blood myeloid)</text>
+
+  <!-- Arrow down -->
+  <line x1="340" y1="112" x2="340" y2="132" stroke="#000" stroke-width="1" marker-end="url(#arrowB)"/>
+  <text x="355" y="126" class="arrow-text">suppressed at 6 concurrent checkpoints</text>
+
+  <!-- Defs -->
+  <defs>
+    <marker id="arrowB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrowBig" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- ===== LAYER 1 ===== -->
+  <rect x="40" y="140" width="600" height="80" rx="3" fill="#f7f7f7" stroke="#000" stroke-width="0.8"/>
+  <!-- L number circle -->
+  <circle cx="70" cy="165" r="14" fill="#333"/>
+  <text x="70" y="170" text-anchor="middle" class="layer-num">L1</text>
+  <!-- Content -->
+  <text x="95" y="160" class="label">Myeloid paracrine suppression</text>
+  <text x="95" y="175" class="genes">TGFB1 ↑156%  |  LGALS9 ↑94%  |  AIM2 ↑1431%  |  MEFV ↑201%  |  PYCARD ↑25%</text>
+  <text x="95" y="190" class="genes">LILRB1 ↑102%  |  SIGLEC10 ↑138%     (all 25/25 or 23-24/25 consistency)</text>
+  <!-- Tissue tag -->
+  <rect x="95" y="199" width="55" height="14" rx="2" fill="#333"/>
+  <text x="122" y="210" text-anchor="middle" class="tissue">BLOOD</text>
+  <text x="160" y="210" class="note">Paracrine + cell-surface inhibitory signaling</text>
+
+  <!-- ===== LAYER 2 ===== -->
+  <rect x="40" y="230" width="600" height="75" rx="3" fill="#fff" stroke="#000" stroke-width="0.8"/>
+  <circle cx="70" cy="255" r="14" fill="#333"/>
+  <text x="70" y="260" text-anchor="middle" class="layer-num">L2</text>
+  <text x="95" y="252" class="label">Epigenetic silencing</text>
+  <text x="95" y="267" class="genes">DNMT1 ↑164% (36/36 liver, 25/25 blood)  |  DNMT3A ↑348%  |  TET2 ↑150%</text>
+  <text x="95" y="282" class="genes">TFAM↔DNMT1 ρ=0.925 (mito-epigenetic coupling)</text>
+  <rect x="95" y="289" width="100" height="14" rx="2" fill="#999"/>
+  <text x="145" y="300" text-anchor="middle" class="tissue-both">BOTH TISSUES</text>
+  <text x="205" y="300" class="note">Blood-dominant; DNMT1 both-tissue significant</text>
+
+  <!-- ===== LAYER 3 ===== -->
+  <rect x="40" y="315" width="600" height="75" rx="3" fill="#f7f7f7" stroke="#000" stroke-width="0.8"/>
+  <circle cx="70" cy="340" r="14" fill="#333"/>
+  <text x="70" y="345" text-anchor="middle" class="layer-num">L3</text>
+  <text x="95" y="337" class="label">Metabolic checkpoint</text>
+  <text x="95" y="352" class="genes">MTOR ↑521% (blood) / ↑327% (liver)  |  LDHA ↓36%  |  TFAM pan-lineage↑</text>
+  <text x="95" y="367" class="genes">mTOR activation dissociated from glycolytic output → metabolic uncoupling</text>
+  <rect x="95" y="374" width="55" height="14" rx="2" fill="#333"/>
+  <text x="122" y="385" text-anchor="middle" class="tissue">BLOOD</text>
+  <text x="160" y="385" class="note">LDHA: mixed attribution (per-cell 35%)</text>
+
+  <!-- ===== LAYER 4 ===== -->
+  <rect x="40" y="400" width="600" height="75" rx="3" fill="#fff" stroke="#000" stroke-width="0.8"/>
+  <circle cx="70" cy="425" r="14" fill="#333"/>
+  <text x="70" y="430" text-anchor="middle" class="layer-num">L4</text>
+  <text x="95" y="422" class="label">JAK-STAT paradox (IT-specific)</text>
+  <text x="95" y="437" class="genes">SOCS1 ↓67% (CD4T) / ↓64% (CD8T)  |  SOCS3 ↓77%     (all 25/25, NL→IA NS)</text>
+  <text x="95" y="452" class="genes">JAK1↔SOCS1 ρ=−0.731 — brake released, yet no effector cytokine output</text>
+  <rect x="95" y="459" width="55" height="14" rx="2" fill="#333"/>
+  <text x="122" y="470" text-anchor="middle" class="tissue">BLOOD</text>
+  <text x="160" y="470" class="note">IT-specific: absent in IA</text>
+
+  <!-- ===== LAYER 5 ===== -->
+  <rect x="40" y="485" width="600" height="80" rx="3" fill="#f7f7f7" stroke="#000" stroke-width="0.8"/>
+  <circle cx="70" cy="512" r="14" fill="#333"/>
+  <text x="70" y="517" text-anchor="middle" class="layer-num">L5</text>
+  <text x="95" y="507" class="label">Liver-specific T cell exhaustion (tissue-opposite)</text>
+  <text x="95" y="522" class="genes">CD4T: TOX ↑101%  |  LAYN ↑431%  |  CTLA4 ↑171%  |  TIGIT ↑124%  |  TOX2 ↑242%</text>
+  <text x="95" y="537" class="genes">CD8T: TOX ↑87% (36/36)  |  BCL6 ↑163% (Tpex phenotype)  |  TIGIT ↑152%</text>
+  <text x="95" y="552" class="genes">All liver ↑ with blood ↓ or NS → hepatic microenvironment-driven</text>
+  <rect x="95" y="549" width="48" height="14" rx="2" fill="#777"/>
+  <text x="119" y="560" text-anchor="middle" class="tissue">LIVER</text>
+
+  <!-- ===== LAYER 6 ===== -->
+  <rect x="40" y="575" width="600" height="65" rx="3" fill="#fff" stroke="#000" stroke-width="0.8"/>
+  <circle cx="70" cy="600" r="14" fill="#333"/>
+  <text x="70" y="605" text-anchor="middle" class="layer-num">L6</text>
+  <text x="95" y="597" class="label">Terminal differentiation block</text>
+  <text x="95" y="612" class="genes">PRDM1 (BLIMP-1) ↓36% liver CD4T (36/36)  |  ↓59% blood CD4T  |  ↓58% blood CD8T</text>
+  <text x="95" y="627" class="genes">RORC ↓49% (liver CD4T) → Th17 suppression</text>
+  <rect x="95" y="624" width="100" height="14" rx="2" fill="#999"/>
+  <text x="145" y="635" text-anchor="middle" class="tissue-both">BOTH TISSUES</text>
+  <text x="205" y="635" class="note">Strongest donor-pair consistency in study</text>
+
+  <!-- Arrow down to blocked -->
+  <line x1="340" y1="645" x2="340" y2="670" stroke="#000" stroke-width="1.2" marker-end="url(#arrowBig)"/>
+
+  <!-- Effector Conversion Blocked Box -->
+  <rect x="120" y="675" width="440" height="40" rx="4" fill="none" stroke="#000" stroke-width="2" stroke-dasharray="6 3"/>
+  <text x="340" y="693" text-anchor="middle" class="blocked">✕  EFFECTOR CONVERSION BLOCKED  ✕</text>
+  <text x="340" y="706" text-anchor="middle" class="note">No effector cytokine, granzyme B, or perforin upregulation despite upstream activation</text>
+
+  <!-- Validation box -->
+  <rect x="40" y="730" width="600" height="55" rx="3" fill="#f0f0f0" stroke="#000" stroke-width="0.5"/>
+  <text x="50" y="748" class="header">Validation</text>
+  <text x="50" y="763" class="note">Oaxaca-Blinder decomposition: 32/33 gene-lineage-tissue combinations per-cell dominant (46 ROBUST + 17 VALID).</text>
+  <text x="50" y="776" class="note">Zero composition-driven findings. All donor-level Mann-Whitney U tests (n=23 donors). See Supplementary Tables S6, S9.</text>
+
+  <!-- Legend -->
+  <rect x="40" y="800" width="600" height="50" rx="3" fill="none" stroke="#999" stroke-width="0.5"/>
+  <text x="50" y="818" class="header">Tissue dominance</text>
+  <rect x="155" y="808" width="45" height="13" rx="2" fill="#333"/>
+  <text x="178" y="818" text-anchor="middle" class="tissue">BLOOD</text>
+  <text x="210" y="818" class="legend-text">Blood-dominant (L1, L3, L4)</text>
+  <rect x="370" y="808" width="40" height="13" rx="2" fill="#777"/>
+  <text x="390" y="818" text-anchor="middle" class="tissue">LIVER</text>
+  <text x="420" y="818" class="legend-text">Liver-dominant (L5)</text>
+  <rect x="525" y="808" width="80" height="13" rx="2" fill="#999"/>
+  <text x="565" y="818" text-anchor="middle" class="tissue-both">BOTH TISSUES</text>
+  <text x="50" y="840" class="legend-text">Percent changes from donor-level mean log-normalized values. ★p&lt;0.05, Mann-Whitney U. Consistency = donor pairs in expected direction / total pairs.</text>
+
+  <!-- Bracket on left side showing "Blood-dominant" -->
+  <path d="M32 140 L32 475" fill="none" stroke="#555" stroke-width="0.8"/>
+  <path d="M32 140 L36 140" fill="none" stroke="#555" stroke-width="0.8"/>
+  <path d="M32 475 L36 475" fill="none" stroke="#555" stroke-width="0.8"/>
+  <text x="28" y="310" text-anchor="middle" transform="rotate(-90, 28, 310)" style="font-size:8.5px;fill:#555;font-weight:600">Blood-dominant (L1–L4)</text>
+
+  <path d="M32 485 L32 565" fill="none" stroke="#555" stroke-width="0.8"/>
+  <path d="M32 485 L36 485" fill="none" stroke="#555" stroke-width="0.8"/>
+  <path d="M32 565 L36 565" fill="none" stroke="#555" stroke-width="0.8"/>
+  <text x="28" y="525" text-anchor="middle" transform="rotate(-90, 28, 525)" style="font-size:8.5px;fill:#555;font-weight:600">Liver (L5)</text>
+
+  <path d="M32 575 L32 640" fill="none" stroke="#555" stroke-width="0.8"/>
+  <path d="M32 575 L36 575" fill="none" stroke="#555" stroke-width="0.8"/>
+  <path d="M32 640 L36 640" fill="none" stroke="#555" stroke-width="0.8"/>
+  <text x="28" y="608" text-anchor="middle" transform="rotate(-90, 28, 608)" style="font-size:8.5px;fill:#555;font-weight:600">Both (L6)</text>
+
+</svg>

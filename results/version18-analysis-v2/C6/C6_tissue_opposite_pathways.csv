@@ -1,0 +1,10 @@
+tissue_liver,lineage,pathway,comparison_liver,stage1_liver,stage2_liver,mean_s1_liver,mean_s2_liver,pct_change_liver,direction_liver,p_value_liver,sig_liver,consistency_liver,n_s1_liver,n_s2_liver,tissue_blood,comparison_blood,stage1_blood,stage2_blood,mean_s1_blood,mean_s2_blood,pct_change_blood,direction_blood,p_value_blood,sig_blood,consistency_blood,n_s1_blood,n_s2_blood
+Liver,CD4_T,antigen_presentation,NL→IT,NL,IT,0.259954,0.339532,30.6,↑,0.015152,*,33/36,6,6,Blood,NL→IT,NL,IT,0.286534,0.243236,-15.1,↓,0.420635,NS,17/25,5,5
+Liver,Myeloid,cell_cycle,NL→IT,NL,IT,0.066001,0.085732,29.9,↑,0.030303,*,27/30,6,5,Blood,NL→IT,NL,IT,0.044926,0.030944,-31.1,↓,0.063492,†,18/20,4,5
+Liver,CD8_T,checkpoint,NL→IT,NL,IT,0.090449,0.128643,42.2,↑,0.041126,*,31/36,6,6,Blood,NL→IT,NL,IT,0.077534,0.037587,-51.5,↓,0.031746,*,23/25,5,5
+Liver,CD8_T,exhaustion,NL→IT,NL,IT,0.09007,0.126369,40.3,↑,0.041126,*,31/36,6,6,Blood,NL→IT,NL,IT,0.072514,0.036646,-49.5,↓,0.055556,†,22/25,5,5
+Liver,Myeloid,senescence,NL→IT,NL,IT,0.101404,0.122892,21.2,↑,0.054681,†,26/30,6,5,Blood,NL→IT,NL,IT,0.078637,0.055537,-29.4,↓,0.015873,*,20/20,4,5
+Liver,NK,checkpoint,NL→IT,NL,IT,0.083344,0.093001,11.6,↑,0.329004,NS,21/30,6,5,Blood,NL→IT,NL,IT,0.081634,0.055766,-31.7,↓,0.015873,*,24/25,5,5
+Liver,NK,exhaustion,NL→IT,NL,IT,0.085421,0.096478,12.9,↑,0.329004,NS,21/30,6,5,Blood,NL→IT,NL,IT,0.0807,0.055547,-31.2,↓,0.015873,*,24/25,5,5
+Liver,NK,senescence,NL→IT,NL,IT,0.068199,0.075485,10.7,↑,0.428571,NS,20/30,6,5,Blood,NL→IT,NL,IT,0.039752,0.026398,-33.6,↓,0.015873,*,24/25,5,5
+Liver,Myeloid,epigenetics,NL→IT,NL,IT,0.035431,0.03333,-5.9,↓,0.662338,NS,18/30,6,5,Blood,NL→IT,NL,IT,0.02623,0.035853,36.7,↑,0.015873,*,20/20,4,5

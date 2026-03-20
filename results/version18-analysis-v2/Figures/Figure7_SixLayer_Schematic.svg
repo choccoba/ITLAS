@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#66BB6A"/>
+    </linearGradient>
+    <linearGradient id="bottomGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C0392B"/>
+      <stop offset="100%" stop-color="#E74C3C"/>
+    </linearGradient>
+    <linearGradient id="l1grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E64B35"/>
+      <stop offset="100%" stop-color="#F07B6B"/>
+    </linearGradient>
+    <linearGradient id="l2grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9B59B6"/>
+      <stop offset="100%" stop-color="#BB8FCE"/>
+    </linearGradient>
+    <linearGradient id="l3grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F39C12"/>
+      <stop offset="100%" stop-color="#F7C948"/>
+    </linearGradient>
+    <linearGradient id="l4grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2980B9"/>
+      <stop offset="100%" stop-color="#5DADE2"/>
+    </linearGradient>
+    <linearGradient id="l5grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E64B35"/>
+      <stop offset="100%" stop-color="#F07B6B"/>
+    </linearGradient>
+    <linearGradient id="l6grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#3D5A8A"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="1000" fill="#F8FAFC"/>
+
+  <!-- Title -->
+  <text x="700" y="40" text-anchor="middle" font-size="22" font-weight="bold" fill="#1B2A4A">Figure 7. Six-Layer Effector Suppression Architecture in IT Phase</text>
+
+  <!-- TOP: Immune Engagement Bar -->
+  <rect x="100" y="60" width="1200" height="65" rx="10" fill="url(#topGrad)" filter="url(#shadow)"/>
+  <text x="700" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="white">✦ ACTIVE IMMUNE ENGAGEMENT</text>
+  <text x="700" y="103" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.9)">HLA class II ↑ (35/36 consistency) | JAK1 pan-immune ↑ (6 lineages) | IFN response ↑ (MX1/ISG15) | MTOR ↑</text>
+  <text x="700" y="118" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.75)">Antigen recognition → Signaling initiation → IFN response commenced</text>
+
+  <!-- Downward arrows from engagement -->
+  <path d="M350,125 L350,145" stroke="#4CAF50" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+  <path d="M700,125 L700,145" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <path d="M1050,125 L1050,145" stroke="#4CAF50" stroke-width="2" fill="none"/>
+
+  <!-- SECTION: Blood-Dominant (Left) -->
+  <text x="380" y="158" text-anchor="middle" font-size="14" font-weight="bold" fill="#3C5488">BLOOD-DOMINANT LAYERS</text>
+
+  <!-- Layer 1 -->
+  <rect x="100" y="170" width="560" height="90" rx="8" fill="white" stroke="#FADBD5" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="100" y="170" width="40" height="90" rx="8 0 0 8" fill="url(#l1grad)"/>
+  <text x="120" y="222" text-anchor="middle" font-size="20" font-weight="bold" fill="white">L1</text>
+  <text x="155" y="192" font-size="13" font-weight="bold" fill="#C0392B">Myeloid Paracrine Suppression</text>
+  <text x="155" y="210" font-size="10" fill="#555">TGFB1 ★↑156% (p=0.008) | LGALS9 ★↑94% | LILRB1 ★↑102% | SIGLEC10 ★↑138%</text>
+  <text x="155" y="226" font-size="10" fill="#555">AIM2 ★↑1431% | MEFV ★↑201% | PYCARD ★↑25% — all 25/25 consistency</text>
+  <text x="155" y="248" font-size="9" fill="#888">Myeloid cells secrete suppressive molecules that inhibit neighboring effector cells</text>
+  <rect x="595" y="180" width="55" height="18" rx="4" fill="#3C5488"/>
+  <text x="622" y="193" text-anchor="middle" font-size="9" font-weight="bold" fill="white">BLOOD</text>
+
+  <!-- Layer 2 -->
+  <rect x="100" y="270" width="560" height="90" rx="8" fill="white" stroke="#E8D5F0" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="100" y="270" width="40" height="90" rx="8 0 0 8" fill="url(#l2grad)"/>
+  <text x="120" y="322" text-anchor="middle" font-size="20" font-weight="bold" fill="white">L2</text>
+  <text x="155" y="292" font-size="13" font-weight="bold" fill="#8E44AD">Epigenetic Silencing</text>
+  <text x="155" y="310" font-size="10" fill="#555">DNMT1 ★↑164% | DNMT3A ★↑348% | TET2 ★↑150% — Blood Myeloid</text>
+  <text x="155" y="326" font-size="10" fill="#555">DNMT1 ★↑125% — Liver Myeloid | TFAM↔DNMT1 ρ=0.925 (mito-epigenetic coupling)</text>
+  <text x="155" y="348" font-size="9" fill="#888">Active chromatin remodeling may silence effector gene loci</text>
+  <rect x="570" y="280" width="80" height="18" rx="4" fill="#6A3D9A"/>
+  <text x="610" y="293" text-anchor="middle" font-size="9" font-weight="bold" fill="white">BLOOD+LIVER</text>
+
+  <!-- Layer 3 -->
+  <rect x="100" y="370" width="560" height="90" rx="8" fill="white" stroke="#FAE5B8" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="100" y="370" width="40" height="90" rx="8 0 0 8" fill="url(#l3grad)"/>
+  <text x="120" y="422" text-anchor="middle" font-size="20" font-weight="bold" fill="white">L3</text>
+  <text x="155" y="392" font-size="13" font-weight="bold" fill="#D4880F">Metabolic Checkpoint</text>
+  <text x="155" y="410" font-size="10" fill="#555">MTOR ★↑521% (signaling ON) but LDHA ★↓36% (glycolytic switch OFF)</text>
+  <text x="155" y="426" font-size="10" fill="#555">TFAM pan-lineage ↑ | Metabolic uncoupling prevents effector energy supply</text>
+  <text x="155" y="448" font-size="9" fill="#888">mTOR activates but glycolysis is blocked → energy for effector function unavailable</text>
+  <rect x="595" y="380" width="55" height="18" rx="4" fill="#3C5488"/>
+  <text x="622" y="393" text-anchor="middle" font-size="9" font-weight="bold" fill="white">BLOOD</text>
+
+  <!-- Layer 4 -->
+  <rect x="100" y="470" width="560" height="90" rx="8" fill="white" stroke="#C8DFF0" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="100" y="470" width="40" height="90" rx="8 0 0 8" fill="url(#l4grad)"/>
+  <text x="120" y="522" text-anchor="middle" font-size="20" font-weight="bold" fill="white">L4</text>
+  <text x="155" y="492" font-size="13" font-weight="bold" fill="#2471A3">JAK-STAT Paradox</text>
+  <text x="155" y="510" font-size="10" fill="#555">JAK1 ★↑128% + SOCS1 ★↓67% + SOCS3 ★↓77% — IT-specific (NL→IA NS)</text>
+  <text x="155" y="526" font-size="10" fill="#555">JAK1↔SOCS1 ρ=−0.731 (FDR q<0.001) — brake released but no output</text>
+  <text x="155" y="548" font-size="9" fill="#888">Signaling brake removed, yet no downstream effector cytokine production</text>
+  <rect x="595" y="480" width="55" height="18" rx="4" fill="#3C5488"/>
+  <text x="622" y="493" text-anchor="middle" font-size="9" font-weight="bold" fill="white">BLOOD</text>
+
+  <!-- SECTION: Liver-Dominant (Right) -->
+  <text x="1050" y="158" text-anchor="middle" font-size="14" font-weight="bold" fill="#E64B35">LIVER-DOMINANT LAYER</text>
+
+  <!-- Layer 5 -->
+  <rect x="740" y="170" width="560" height="190" rx="8" fill="white" stroke="#FADBD5" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="740" y="170" width="40" height="190" rx="8 0 0 8" fill="url(#l5grad)"/>
+  <text x="760" y="272" text-anchor="middle" font-size="20" font-weight="bold" fill="white">L5</text>
+  <text x="795" y="192" font-size="13" font-weight="bold" fill="#C0392B">Liver T Cell Exhaustion Programming</text>
+  <text x="795" y="213" font-size="11" fill="#333" font-weight="600">CD4+ T cells (Liver ↑ / Blood ↓ = tissue-opposite):</text>
+  <text x="795" y="230" font-size="10" fill="#555">TOX ★↑101% (p=0.009) | TOX2 ★↑242% | LAYN ★↑431% | CTLA4 ★↑171% | TIGIT ★↑124%</text>
+  <text x="795" y="250" font-size="11" fill="#333" font-weight="600">CD8+ T cells:</text>
+  <text x="795" y="267" font-size="10" fill="#555">TOX ★↑87% (p=0.002, 36/36) | TIGIT ★↑152% | BCL6 ★↑163% (Tpex phenotype)</text>
+  <text x="795" y="290" font-size="10" fill="#555">TOX2/CTLA4/TIGIT(CD4T)/RORC: chronic-persistent (IT→IA sig)</text>
+  <text x="795" y="310" font-size="10" fill="#555">TOX/LAYN/BCL6/TIGIT(CD8T): IT-specific (NL→IA NS)</text>
+  <text x="795" y="340" font-size="9" fill="#888">Liver microenvironment actively promotes exhaustion; blood T cells not yet affected</text>
+  <rect x="1235" y="180" width="55" height="18" rx="4" fill="#E64B35"/>
+  <text x="1262" y="193" text-anchor="middle" font-size="9" font-weight="bold" fill="white">LIVER</text>
+
+  <!-- SECTION: Pan-Tissue (Right bottom) -->
+  <text x="1050" y="388" text-anchor="middle" font-size="14" font-weight="bold" fill="#1B2A4A">PAN-TISSUE LAYER</text>
+
+  <!-- Layer 6 -->
+  <rect x="740" y="400" width="560" height="90" rx="8" fill="white" stroke="#D5DAE2" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="740" y="400" width="40" height="90" rx="8 0 0 8" fill="url(#l6grad)"/>
+  <text x="760" y="452" text-anchor="middle" font-size="20" font-weight="bold" fill="white">L6</text>
+  <text x="795" y="422" font-size="13" font-weight="bold" fill="#1B2A4A">Terminal Differentiation Block</text>
+  <text x="795" y="442" font-size="10" fill="#555">PRDM1/BLIMP-1 ★↓36% (Liver CD4T 36/36) | ★↓59% (Blood CD4T) | ★↓58% (Blood CD8T)</text>
+  <text x="795" y="458" font-size="10" fill="#555">RORC ★↓49% (Liver CD4T) — Th17 commitment blocked</text>
+  <text x="795" y="478" font-size="9" fill="#888">Cannot commit to terminal effector program → IFNγ, granzyme B, perforin not produced</text>
+  <rect x="1220" y="410" width="70" height="18" rx="4" fill="#666"/>
+  <text x="1255" y="423" text-anchor="middle" font-size="9" font-weight="bold" fill="white">PAN-TISSUE</text>
+
+  <!-- Inter-layer arrows -->
+  <g stroke="#AAA" stroke-width="1" stroke-dasharray="4,3" fill="none">
+    <!-- L1 TGFB1 → L2 DNMT -->
+    <path d="M660,230 Q680,280 660,310"/>
+    <!-- L2 epigenetic → L4 output block -->
+    <path d="M660,330 Q690,420 660,510"/>
+    <!-- L5 exhaustion → L6 -->
+    <path d="M780,360 Q760,400 780,440"/>
+  </g>
+  <text x="680" y="270" font-size="8" fill="#999" transform="rotate(-80 680 270)">TGFB1→DNMT</text>
+  <text x="690" y="420" font-size="8" fill="#999" transform="rotate(-80 690 420)">silencing→no output</text>
+
+  <!-- C10 Validation Box -->
+  <rect x="740" y="510" width="560" height="65" rx="8" fill="#E8F5E9" stroke="#A5D6A7" stroke-width="1" filter="url(#shadow)"/>
+  <text x="760" y="532" font-size="12" font-weight="bold" fill="#2E7D32">✓ Simpson's Paradox Verification (C10 Oaxaca-Blinder)</text>
+  <text x="760" y="550" font-size="10" fill="#444">99.6% of NL→IT changes are per-cell dominant | All 63 six-layer gene-lineage combinations validated</text>
+  <text x="760" y="565" font-size="10" fill="#444">46 ROBUST + 17 VALID | Zero composition-driven | LDHA: mixed (35% per-cell)</text>
+
+  <!-- BOTTOM: Blocked Bar -->
+  <rect x="100" y="600" width="1200" height="55" rx="10" fill="url(#bottomGrad)" filter="url(#shadow)"/>
+  <text x="700" y="623" text-anchor="middle" font-size="17" font-weight="bold" fill="white">✕ EFFECTOR CONVERSION BLOCKED ✕</text>
+  <text x="700" y="644" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.85)">No IFNγ upregulation | No granzyme B/perforin increase | No cytokine production — despite active upstream signaling</text>
+
+  <!-- Footer -->
+  <text x="700" y="685" text-anchor="middle" font-size="10" fill="#888">Tissue-separated single-cell transcriptomic reanalysis of GSE182159 (243K cells, 23 donors) | Donor-level Mann-Whitney U tests | Hypothesis-generating</text>
+</svg>

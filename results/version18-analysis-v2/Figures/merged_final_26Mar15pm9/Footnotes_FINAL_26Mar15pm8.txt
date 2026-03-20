@@ -1,0 +1,74 @@
+============================================================
+FOOTNOTES — V18-v2 FINAL (26Mar15pm5)
+3 Tables + 5 Figures = 8 (CMH limit)
+Supp Tables S1–S12 | Supp Figures S1–S8
+============================================================
+
+=== Main Tables ===
+
+Table 1 | Immune Cell Proportions Across Disease Groups in Liver and Blood | Donor-level means (%). Mann-Whitney U tests (two-sided) vs NL; ★p<0.05. Liver: NL n=6, IT n=6, IA n=5, AR n=3, CR n=3. Blood: NL n=5, IT n=5, IA n=4, AR n=3, CR n=3. The chronic HBV disease stages (IT→IA→CR) represent sequential phases of vertical infection. AR is an independent comparator of adult-onset acute self-limited hepatitis B.
+
+Table 2 | IT-Specific Individual Gene Markers (Top Candidates by Tissue) | C5 148-gene panel (C3-only genes noted where applicable). Donor-level Mann-Whitney U tests. Percent change computed from donor-level mean log-normalized expression values (log1p-transformed counts per 10,000). IT-specific: NL→IT significant (p<0.05) with NL→IA non-significant (p≥0.05). Consistency: donor pairs showing expected direction / total possible pairs.
+
+Table 3 | BCR/TCR Donor-Level Repertoire Metrics Across the HBV Disease Spectrum | Panel A: BCR repertoire metrics. Panel B: TCR repertoire metrics. Values: donor-level means ± SD. Clonality = 1 − (Shannon entropy / log2(n_unique_clones)). Singleton% = percentage of clones with single cell. Class-switched% = IgG% + IgA%. BCR: heavy chain (IGH) only; TCR: alpha chain (TRA) only. CR group had no BCR/TCR library data. AR (n=1 per tissue) shown for reference, excluded from statistical testing. Statistical comparisons reported in text (Result 5) and Supplementary Table S12.
+
+=== Main Figures ===
+
+Figure 1 | Immune Cell Composition and Disease Trajectory Across the HBV Spectrum | (A–C) Tissue-separated immune cell composition: liver (A) and blood (B) stacked bar plots, NK tissue-divergent trajectory (C). (D–F) Disease trajectory examples: TGFB1 IA-emergent in blood NK (D), GNLY AR-advantage in CD8+ T (E), MEFV CR-specific in CD8+ T (F). Liver: red circles; Blood: blue triangles. Mann-Whitney U test; ★p<0.05. See Table 1, Supplementary Tables S4a, S5.
+
+Figure 2 | Pathway-Level Tissue Discordance in the IT Phase | 29 pathway AUCell scores × 6 lineages. NL→IT percent change heatmaps for liver (A) and blood (B). Tissue-opposite combinations highlighted. See Supplementary Tables S1b, S7.
+
+Figure 3 | IT-Specific Gene Expression Signatures Across Tissue Compartments | Six representative genes: HLA-DPB1 (A, antigen presentation), DNMT1 (B, epigenetic), PRDM1 (C, differentiation block), TOX (D, liver exhaustion), SOCS1 (E, JAK-STAT paradox), TYROBP (F, B cell cytotoxic). Donor-level dot plots. See Table 2, Supplementary Table S2b.
+
+Figure 4 | Gene-to-Gene Correlation Networks | Network graph (A), TFAM↔DNMT1 scatter (B), JAK1↔SOCS1 scatter (C). FDR q<0.05, |ρ|≥0.7. See Supplementary Table S8.
+
+Figure 5 | BCR/TCR Repertoire Analysis: IT-Oriented Key Findings | Blood TCR clonality (A), Liver B_c04-COCH proportion (B), Blood BCR IgD% (C), Liver SDC1+ plasma cells (D). See Table 3, Supplementary Tables S11–S12.
+
+=== Supplementary Tables ===
+
+Supp Table S1a | 29 Immunological Pathway Gene Sets (179 unique genes)
+Supp Table S1b | Complete 29-Pathway × 6-Lineage × 2-Tissue AUCell Scoring Results
+Supp Table S2a | Individual Gene Candidates with Source Attribution (C3/C5/C9B). C3: 196 genes; C5: 148 genes; C9B: 19 genes. C3∩C5: 81 genes. C3∪C5: 263 genes.
+Supp Table S2b | IT-Specific Gene-Lineage Combinations. Liver=52, Blood=62, Total=114.
+Supp Table S3 | Comprehensive Comparison: NL→IT vs IT→IA. 24 genes, 4 lineages, 2 tissues. Patterns: TRANSITION, IT-persistent, IA-emergent, Chronic.
+Supp Table S4a | IA vs AR Discriminators with Disease Trajectory Context
+Supp Table S4b | Comprehensive Disease Trajectory Comparison for All Tested Genes
+Supp Table S5 | Disease Trajectory Classification of CR-Phase Transcriptomic Alterations
+Supp Table S6 | Six-Layer Effector Suppression Architecture. 32 gene-lineage-tissue combinations. Oaxaca-Blinder per-cell validation.
+Supp Table S7 | Tissue-Opposite Pathway Changes at NL→IT. 9 discordant pathway-lineage combinations.
+Supp Table S8 | Top 15 Hub Genes by Significance Frequency. Max possible = 84 tests per gene.
+Supp Table S9 | Oaxaca-Blinder Decomposition Summary Across All Comparisons
+Supp Table S10 | CR-Specific Residual Transcriptomic Alterations: Aberrant Lineage Expression
+Supp Table S11a-e | BCR/TCR Detailed Donor-Level Metrics (BCR, TCR, PlasmaB, All Tests, Sig Tests)
+Supp Table S12 | BCR/TCR Detailed Donor-Level Statistical Results with Pattern Classification
+
+=== Supplementary Figures ===
+
+Supp Fig S1 | UMAP: 7 Immune Lineages and 59 Subclusters (2 panels)
+Supp Fig S2 | UMAP: Study Group Distribution (5 panels)
+Supp Fig S3 | Six-Layer Effector Suppression Schematic (1 panel)
+Supp Fig S4 | TOX Lineage-Specific IT→IA Transition (2 panels)
+Supp Fig S5 | GZMK IT→IA Transition (2 panels)
+Supp Fig S6 | Blood NK Immunoregulatory Phenotype at IT→IA (3 panels)
+Supp Fig S7 | IA vs AR Three Patterns (3 panels)
+Supp Fig S8 | Additional IT Gene Signatures: LAYN, JAK1 (2 panels)
+
+=== Terminology ===
+
+Disease stages | IT → IA → CR only. AR = independent comparator (adult-onset acute self-limited HBV).
+Significance | ★ = p<0.05; † = p<0.10. All tests: donor-level Mann-Whitney U, two-sided.
+Tissue separation | All analyses performed independently for Liver and Blood.
+Per-cell validation | Oaxaca-Blinder: ROBUST (>70%), VALID (>50%), MIXED, COMPOSITION_DRIVEN.
+
+=== Renumbering Map (Final 26Mar15pm5) ===
+
+Old T1 → Table 1 | Old T2 → Supp S7 | Old T3 → Table 2
+Old T4 (Hub) → Supp S8 | Old T5 (CR) → Supp S10
+Old T6 → Supp S6 | Old T7 → Supp S9 | Old T8 → Table 3 (BCR/TCR)
+Old Supp S6a-e → S11a-e | Old Supp S7 → S12
+Old F1+F6 → Figure 1 (merged) | Old F2 → Figure 2
+Old F3+F4 → Figure 3 (merged) | Old F5 → Figure 4
+Old F8 → Figure 5 (BCR/TCR) | Old F7 → Supp Fig S3
+Old Supp S1-S2 → Supp S1-S2 (unchanged)
+Old Supp S4-S7 → Supp S4-S7 (unchanged)
+New Supp S8 (LAYN, JAK1 from merged F3+F4)

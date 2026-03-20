@@ -33,7 +33,6 @@ venv.bak/
 
 # Project specifics
 data/
-results/
 g_paper-*/
 
 # Jupyter Notebook

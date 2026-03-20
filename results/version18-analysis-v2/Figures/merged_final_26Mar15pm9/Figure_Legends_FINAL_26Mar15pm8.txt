@@ -1,0 +1,138 @@
+============================================================
+FIGURE LEGENDS — V18-v2 FINAL (26Mar15pm5)
+3 Tables + 5 Figures = 8 (CMH limit)
+============================================================
+
+--- MAIN FIGURES ---
+
+Figure 1. Immune Cell Composition and Disease Trajectory Across the HBV Spectrum.
+(A) Stacked bar plots showing immune cell lineage proportions in liver across NL, IT, IA, AR, and CR groups (donor-level means, 6 lineages). (B) Same for blood. Liver is dominated by NK cells (43.9% at NL) while blood is dominated by myeloid cells (35.1% at NL). (C) NK cell proportions shown separately for liver (red circles) and blood (blue triangles). Individual donor values with group means (horizontal bars). Liver NK shows progressive decline with partial CR recovery; blood NK shows severe CR depletion. (D) TGFB1 in blood NK cells across disease spectrum, showing IA-emergent upregulation (NL→IT NS; IT→IA ★↑43.9%, p=0.016, 20/20 consistency). TGFB1 elevation in blood NK becomes significant only upon transition to IA, indicating an IA-emergent immunoregulatory phenotype. (E) GNLY in CD8+ T cells, showing preserved cytotoxicity in AR versus diminished in IA (Supplementary Table S4a). (F) MEFV in CD8+ T cells, showing aberrant inflammasome expression unique to CR — a residual transcriptomic alteration (Supplementary Table S5). Mann-Whitney U test; ★p<0.05. (Table 1)
+Panels: 6 (A–F)
+
+Figure 2. Pathway-Level Tissue Discordance in the IT Phase.
+(A) Heatmap of 29 pathway AUCell scores (rows) across 6 lineages (columns) showing NL→IT percent change in liver. Red: upregulation; blue: downregulation. ★p<0.05, †p<0.10. (B) Same for blood. Gold borders highlight tissue-opposite pathway-lineage combinations showing significant change in one tissue with opposite direction in the other (Supplementary Table S7).
+Panels: 2 (A, B)
+
+Figure 3. IT-Specific Gene Expression Signatures Across Tissue Compartments.
+(A) HLA-DPB1 donor-level dot plots across disease groups in myeloid cells, shown for liver (red circles) and blood (blue triangles). The most consistent pan-tissue IT signal, representing antigen presentation machinery. (B) DNMT1 in myeloid cells, the most statistically robust individual gene finding with maximum donor-pair consistency in both tissues (36/36 liver, 25/25 blood). (C) PRDM1 (BLIMP-1) downregulation in CD4+ T cells in both liver and blood, indicating terminal differentiation block. (D) TOX in liver CD4+ T cells showing liver-specific upregulation (★p=0.009) with blood non-significant (tissue-opposite), representing exhaustion programming. (E) SOCS1 in blood CD4+ T cells showing IT-specific downregulation (★p=0.008; NL→IA NS), representing the JAK-STAT paradox. (F) TYROBP in plasma B cells showing cytotoxic phenotype acquisition in both liver (★p=0.009) and blood (★p=0.008). Mann-Whitney U test; ★p<0.05. (Table 2)
+Panels: 6 (A–F)
+
+Figure 4. Gene-to-Gene Correlation Networks Reveal Coordinated Immune Reprogramming in IT.
+(A) Gene correlation network constructed from donor-level Spearman correlations (FDR q<0.05, |ρ|≥0.7, strongest per gene pair across all tissue-lineage combinations). Nodes represent the top hub genes (Supplementary Table S8) plus TET2 and SOCS1. Node colors indicate functional modules: Mitochondrial (cyan; MT-CYB, MT-ND1, MT-ND2, TFAM, SDHB), Signaling (orange; JAK1, TGFBR2, MTOR, RPTOR), Epigenetic (purple; DNMT1, DNMT3A, TET2), and Other Hub Genes (grey; CD44, CD27, ATM, RB1). SOCS1 (amber) is included to illustrate the JAK-STAT paradox. Green solid lines: positive correlations; red dashed lines: inverse correlations. Edge thickness proportional to |ρ|. Key ρ values annotated. (B) TFAM↔DNMT1 correlation in blood myeloid cells (ρ=0.925, p<0.001), demonstrating mito-epigenetic coupling. (C) JAK1↔SOCS1 inverse correlation in blood CD4+ T cells (ρ=−0.731, p=0.0003), illustrating the JAK-STAT paradox. In B and C, each dot represents one donor, colored by disease group (NL: green; IT: red; IA: orange; AR: blue; CR: purple).
+Panels: 3 (A–C)
+
+Figure 5. BCR/TCR Repertoire Analysis: IT-Oriented Key Findings.
+(A) Blood TCR clonality across disease groups, showing IT-specific suppression of clonal diversity (NL 0.585 → IT 0.351, ★p=0.032). (B) Liver B_c04-COCH subcluster proportion, showing chronic-specific expansion (★p=0.014). (C) Blood BCR IgD percentage, showing near-complete depletion of naive B cells in IT (NL 17.8% → IT 2.2%, ★p=0.016). (D) Liver SDC1+ mature plasma cell (plasmaB_c01) proportion across disease spectrum, showing IT→IA collapse (★p=0.008) consistent with "switched but not expanded" phenotype. Blue triangles: individual blood donors; red circles: individual liver donors. Horizontal bars: group means. Mann-Whitney U test; ★p<0.05. (Table 3)
+Panels: 4 (A–D)
+
+
+--- SUPPLEMENTARY FIGURES ---
+
+Supplementary Figure S1. UMAP Visualization: 7 Immune Lineages and 59 Subclusters.
+(A) UMAP colored by 7 immune lineages (B cells, CD4+ T, CD8+ T, Myeloid, NK, PlasmaB, gdT) with cell counts. (B) UMAP colored by 59 subclusters with marker gene labels from original annotation (Zhang et al., Gut 2023).
+Panels: 2 (A, B)
+
+Supplementary Figure S2. UMAP: Study Group Distribution.
+UMAP split by study group (NL n=42,579; IT n=49,179; IA n=62,545; AR n=45,452; CR n=43,245), with each group highlighted against a grey background of all cells.
+Panels: 5 (one per group)
+
+Supplementary Figure S3. Six Concurrent Transcriptomic Patterns Associated with Effector Suppression in the IT Phase. Schematic representation of six concurrent transcriptomic patterns identified in the IT phase of chronic HBV infection. Despite active immune engagement — MHC class II upregulation (HLA-DPB1, 36/36 donor-pair consistency), pan-lineage JAK1 activation (33 significant tests across 6 lineages), and type I IFN pathway elevation in blood myeloid cells — no corresponding effector cytokine, granzyme B, or perforin upregulation was detected. Six patterns, each individually consistent with established mechanisms of immune suppression, were simultaneously present: (L1) myeloid paracrine suppression combining secreted immunoregulatory mediators (TGFB1, LGALS9) with cell-surface inhibitory receptors (LILRB1, SIGLEC10) and inflammasome components (AIM2, MEFV, PYCARD); (L2) epigenetic silencing through coordinated upregulation of DNA methylation writers (DNMT1, DNMT3A) and eraser (TET2) with mito-epigenetic coupling (TFAM↔DNMT1 ρ=0.925); (L3) metabolic checkpoint through mTOR activation dissociated from glycolytic output (LDHA↓); (L4) IT-specific JAK-STAT paradox with SOCS1/3 downregulation yet absent effector output (JAK1↔SOCS1 ρ=−0.731); (L5) liver-specific T cell exhaustion programming (TOX, LAYN, CTLA4, TIGIT) with tissue-opposite directionality (liver↑, blood↓); and (L6) terminal differentiation block (PRDM1↓, RORC↓) across both tissues. Patterns L1–L4 are blood-dominant, L5 is liver-dominant, and L6 operates in both compartments. Left brackets indicate tissue dominance grouping. Oaxaca-Blinder decomposition confirmed that 32/33 gene-lineage-tissue combinations across the six patterns are per-cell dominant (46 ROBUST + 17 VALID) with zero composition-driven findings (Supplementary Tables S6, S9). All percent changes computed from donor-level mean log-normalized expression values; all p-values from two-sided Mann-Whitney U tests.
+
+Supplementary Figure S4. TOX Lineage-Specific IT→IA Transition Pattern in Liver.
+(A) TOX donor-level expression in liver myeloid cells across disease groups. TOX showed IT-specific spike (NL→IT ★↑1857%, p=0.004, 36/36) followed by near-complete elimination at IA (IT→IA ★↓96.1%, p=0.007, 30/30) — a true transition pattern. (B) TOX in liver CD4+ T cells showing chronic-persistent upregulation (NL→IT ★↑101%, p=0.009; IT→IA NS), indicating that T cell exhaustion programming persists while aberrant myeloid expression is corrected. Red circles: individual liver donors; horizontal bars: group means. Mann-Whitney U test; ★p<0.05. (Supplementary Table S3)
+Panels: 2 (A, B)
+
+Supplementary Figure S5. GZMK IT→IA Transition in Liver Myeloid and CD8+ T Cells.
+(A) GZMK in liver myeloid cells showing aberrant IT-phase expression eliminated at IA (IT→IA ★↓98.4%, p=0.012, 29/30). (B) GZMK in liver CD8+ T cells showing IT→IA downregulation (★↓22.7%, p=0.030, 27/30). Red circles: individual liver donors; horizontal bars: group means. Mann-Whitney U test; ★p<0.05. (Supplementary Table S3)
+Panels: 2 (A, B)
+
+Supplementary Figure S6. Blood NK Cell Immunoregulatory Phenotype Acquisition at IT→IA Transition.
+Donor-level expression of three IA-emergent genes in blood NK cells: (A) TGFB1 (IT→IA ★↑43.9%, p=0.016, 20/20; NL→IT NS), (B) SERPINE1 (IT→IA ★↑341.4%, p=0.016, 20/20; NL→IT NS), (C) ID3 (IT→IA ★↑770.3%, p=0.032, 19/20; NL→IT NS). All IA-emergent pattern. Blue triangles: individual blood donors; horizontal bars: group means. Mann-Whitney U test; ★p<0.05. (Supplementary Table S3)
+Panels: 3 (A–C)
+
+Supplementary Figure S7. Three Distinct Patterns of IA vs AR Immune Divergence in the Context of IT-Phase Origins.
+(A) IT-inherited pattern: FOXP3 in liver CD4+ T cells showing progressive accumulation across IT→IA, absent in AR (IA vs AR ★p=0.036). (B) IA-emergent pattern: TIGIT in blood myeloid cells, not elevated in IT but significant in IA (NL→IA ★p=0.011; IA vs AR ★p=0.050). (C) AR-advantage pattern: GNLY in blood CD8+ T cells showing marked AR upregulation (NL→AR ★p=0.036) absent in IT and IA. Liver panels: red circles; Blood panels: blue triangles. Mann-Whitney U test; ★p<0.05, †p<0.10. (Supplementary Table S4a)
+Panels: 3 (A–C)
+
+Supplementary Figure S8. Additional BCR/TCR Repertoire Findings.
+(A) Blood BCR top clone size across disease groups, showing IT-specific increase relative to NL (★p=0.006). IA exhibited one donor with markedly expanded clones (70 cells), though this was not a consistent group-level finding. (B) Liver B_c07-FCRL5 (exhausted B cell) subcluster proportion across the disease spectrum, showing a trend toward IT enrichment (†p=0.052). FCRL5 expression is associated with B cell exhaustion and atypical memory B cells. (C) Liver plasmaB_c03-MKI67 (proliferating plasma cell) proportion, showing a trend toward reduction from NL to IT (†p=0.082), consistent with the overall plasma cell compartment contraction described in Result 5.2. (D) BCR isotype distribution by stage and tissue (stacked bar), showing tissue-specific patterns: liver BCR contains substantial IgG (class-switched) across all groups, while blood BCR is IgM-dominant. Liver: red circles; Blood: blue triangles. Horizontal bars: group means. Mann-Whitney U test; ★p<0.05, †p<0.10. (Table 3, Supplementary Tables S11a, S12)
+Panels: 4 (A–D)
+
+Supplementary Figure S9. Additional IT-Specific Gene Signatures.
+Donor-level dot plots for genes not included in Figure 3 due to panel limits. (A) JAK1 cross-lineage NL→IT percent change in liver and blood across 6 lineages, showing pan-lineage elevation consistent with its rank as the most frequently significant gene (33 significant tests; Supplementary Table S8). (B) LAYN in liver CD4+ T cells showing liver-specific IT upregulation (p=0.009, 34/36 donor-pair consistency) with blood non-significant — same tissue-opposite pattern as TOX (Figure 3D). The mean percent change (+430.5%) was disproportionately influenced by one high-expressing IT donor; the statistical significance (Mann-Whitney U rank test) and donor-pair consistency remain robust regardless of this outlier. Liver: red circles; Blood: blue triangles. Mann-Whitney U test; ★p<0.05.
+Panels: 2 (A, B))
+
+
+============================================================
+RENUMBERING MAP: Figures (Old → New)
+============================================================
+Old Figure 1 (A-C) + Old Figure 6 (A-C) → Figure 1 (A-F) [MERGED]
+  - Old F1A (Liver bar) → Fig 1A
+  - Old F1B (Blood bar) → Fig 1B
+  - Old F1C (NK divergence) → Fig 1C
+  - Old F6A (TGFB1 NK) → Fig 1D
+  - Old F6B (GNLY CD8T) → Fig 1E
+  - Old F6C (MEFV CD8T) → Fig 1F
+Old Figure 2 → Figure 2 (unchanged)
+Old Figure 3 + Figure 4 → Figure 3 (MERGED, 6 panels)
+  - Old F3A (HLA-DPB1) → Fig 3A
+  - Old F3B (DNMT1) → Fig 3B
+  - Old F3D (PRDM1) → Fig 3C
+  - Old F4A (TOX) → Fig 3D
+  - Old F4C (SOCS1) → Fig 3E
+  - Old F4D (TYROBP) → Fig 3F
+  - Old F3C (JAK1 cross-lineage) → Supp Fig S8B
+  - Old F4B (LAYN) → Supp Fig S8A
+Old Figure 5 → Figure 4 (renumbered)
+Old Figure 8 (BCR/TCR) → Figure 5 (NEW in Main)
+Old Figure 7 → Supplementary Figure S3
+
+Old Supp Fig S1 → Supp Fig S1 (unchanged)
+Old Supp Fig S2 → Supp Fig S2 (unchanged)
+Old Supp Fig S4 → Supp Fig S4 (unchanged)
+Old Supp Fig S5 → Supp Fig S5 (unchanged)
+Old Supp Fig S6 → Supp Fig S6 (unchanged)
+Old Supp Fig S7 → Supp Fig S7 (unchanged)
+New Supp Fig S8 (dropped panels from F3+F4 merge)
+
+
+============================================================
+COMPLETE FINAL INVENTORY
+============================================================
+
+MAIN (8 items):
+  Table 1: Immune Cell Proportions
+  Table 2: IT-Specific Gene Markers
+  Table 3: BCR/TCR Repertoire Metrics
+  Figure 1: Immune Cell Composition + Disease Trajectory (6 panels) [MERGED]
+  Figure 2: Pathway Heatmap (2 panels)
+  Figure 3: IT Gene Signatures (6 panels) [MERGED]
+  Figure 4: Correlation Networks (3 panels)
+  Figure 5: BCR/TCR Repertoire Key Findings (4 panels) [NEW in Main]
+
+SUPPLEMENTARY TABLES (S1–S12):
+  S1a: 29 Pathway Gene Sets
+  S1b: Complete AUCell Scoring
+  S2a: Gene Candidates Source Attribution
+  S2b: IT-Specific Gene-Lineage Combinations
+  S3: NL→IT vs IT→IA Comparison
+  S4a: IA vs AR Discriminators
+  S4b: Comprehensive Disease Trajectory
+  S5: CR-Phase Alterations
+  S6: Six-Layer Architecture (32 genes)
+  S7: Tissue-Opposite Pathway Changes
+  S8: Hub Genes (Top 15)
+  S9: Oaxaca-Blinder Decomposition
+  S10: CR-Specific Alterations (Aberrant Lineage)
+  S11a-e: BCR/TCR Detailed Metrics
+  S12: BCR/TCR Donor-Level Statistical Results
+
+SUPPLEMENTARY FIGURES (S1–S8):
+  S1: UMAP lineages/subclusters (2 panels)
+  S2: UMAP disease groups (5 panels)
+  S3: Six-Layer schematic (1 panel) [from Main F7]
+  S4: TOX IT→IA transition (2 panels)
+  S5: GZMK IT→IA transition (2 panels)
+  S6: Blood NK immunoregulatory (3 panels)
+  S7: IA vs AR three patterns (3 panels)
+  S8: Additional IT gene signatures - LAYN, JAK1 (2 panels) [NEW]

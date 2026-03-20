@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Supplementary — Six-Layer Tissue Distribution</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1200px; height:800px; font-family:'DM Sans',sans-serif; background:#F5F7FA; overflow:hidden; }
+
+.container { width:1200px; height:800px; position:relative; padding:20px; }
+
+.header {
+  text-align:center; margin-bottom:16px;
+}
+.header h1 { font-size:18px; color:#1B2A4A; font-weight:700; }
+.header p { font-size:11px; color:#777; margin-top:4px; }
+
+.body-diagram {
+  display:flex; gap:20px; height:700px;
+}
+
+/* Left: Liver compartment */
+.compartment {
+  flex:1; border-radius:12px; padding:16px; position:relative;
+}
+.liver-comp {
+  background:linear-gradient(180deg, #FFF5F0 0%, #FFE8E0 100%);
+  border:2px solid #E64B35;
+}
+.blood-comp {
+  background:linear-gradient(180deg, #F0F5FF 0%, #E0EAFF 100%);
+  border:2px solid #3C5488;
+}
+.pan-comp {
+  width:200px; min-width:200px;
+  background:linear-gradient(180deg, #F5F5F5 0%, #E8E8E8 100%);
+  border:2px solid #555;
+}
+
+.comp-title {
+  text-align:center; font-size:15px; font-weight:700; margin-bottom:12px;
+  padding:6px; border-radius:6px;
+}
+.liver-comp .comp-title { background:#E64B35; color:white; }
+.blood-comp .comp-title { background:#3C5488; color:white; }
+.pan-comp .comp-title { background:#555; color:white; }
+
+.comp-stats {
+  text-align:center; font-size:9px; color:#666; margin-bottom:10px;
+}
+
+.layer-card-sm {
+  background:white; border-radius:8px; padding:10px 12px;
+  margin-bottom:8px; box-shadow:0 1px 3px rgba(0,0,0,0.08);
+  border-left:5px solid;
+}
+.layer-card-sm h4 { font-size:11px; font-weight:600; margin-bottom:4px; }
+.layer-card-sm .genes { font-size:9px; color:#555; line-height:1.4; }
+.layer-card-sm .stat { font-size:8px; color:#888; margin-top:3px; }
+.layer-card-sm .pval { font-size:8.5px; color:#C0392B; font-weight:600; }
+
+/* Layer colors */
+.lc-l1 { border-left-color:#E64B35; }
+.lc-l2 { border-left-color:#9B59B6; }
+.lc-l3 { border-left-color:#F39C12; }
+.lc-l4 { border-left-color:#2980B9; }
+.lc-l5 { border-left-color:#E64B35; }
+.lc-l6 { border-left-color:#1B2A4A; }
+
+.cell-icon {
+  display:inline-block; width:18px; height:18px; border-radius:50%;
+  text-align:center; line-height:18px; font-size:8px; font-weight:600; color:white;
+  margin-right:3px;
+}
+.cell-myeloid { background:#E64B35; }
+.cell-cd4 { background:#4DBBD5; }
+.cell-cd8 { background:#00A087; }
+.cell-nk { background:#F39B7F; }
+.cell-b { background:#3C5488; }
+
+/* Connection arrows */
+.connection {
+  position:absolute;
+  font-size:9px; color:#999;
+}
+
+.badge {
+  display:inline-block; padding:2px 6px; border-radius:4px;
+  font-size:8px; font-weight:600; color:white;
+}
+.badge-it { background:#E64B35; }
+.badge-chronic { background:#F39C12; }
+
+/* Bottom summary */
+.bottom-bar {
+  position:absolute; bottom:20px; left:20px; right:20px;
+  background:#1B2A4A; border-radius:8px; padding:10px 20px;
+  color:white; display:flex; justify-content:space-between; align-items:center;
+}
+.bottom-bar .item { text-align:center; }
+.bottom-bar .num { font-size:20px; font-weight:700; }
+.bottom-bar .label { font-size:9px; opacity:0.8; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Supplementary: Tissue Distribution of Six-Layer Effector Suppression</h1>
+    <p>Each layer operates primarily in one tissue compartment, creating a distributed suppression network</p>
+  </div>
+
+  <div class="body-diagram">
+    <!-- LIVER Compartment -->
+    <div class="compartment liver-comp">
+      <div class="comp-title">🫁 LIVER</div>
+      <div class="comp-stats">NK-dominant (43.9%) | n=6 donors | 52 IT-specific combinations</div>
+      
+      <div class="layer-card-sm lc-l5">
+        <h4>L5: T Cell Exhaustion Programming</h4>
+        <div class="genes">
+          <span class="cell-icon cell-cd4">C4</span> <b>CD4+ T:</b><br>
+          TOX ★↑101% | TOX2 ★↑242% | LAYN ★↑431%<br>
+          CTLA4 ★↑171% | TIGIT ★↑124%<br>
+          <span class="badge badge-it">IT-specific</span> TOX, LAYN
+          <span class="badge badge-chronic">Chronic</span> TOX2, CTLA4, TIGIT
+        </div>
+        <div class="genes" style="margin-top:6px;">
+          <span class="cell-icon cell-cd8">C8</span> <b>CD8+ T:</b><br>
+          TOX ★↑87% (36/36) | TIGIT ★↑152% | BCL6 ★↑163%
+          <span class="badge badge-it">IT-specific</span>
+        </div>
+        <div class="stat">Tissue-opposite: Blood shows ↓ or NS for all genes</div>
+        <div class="pval">C10: per-cell 73-81%</div>
+      </div>
+
+      <div class="layer-card-sm lc-l2">
+        <h4>L2 (Liver component): Epigenetic Silencing</h4>
+        <div class="genes">
+          <span class="cell-icon cell-myeloid">My</span> DNMT1 ★↑125% (p=0.002, 36/36)
+        </div>
+        <div class="pval">C10: per-cell 95%</div>
+      </div>
+
+      <div class="layer-card-sm lc-l3">
+        <h4>L3 (Liver component): MTOR</h4>
+        <div class="genes">
+          <span class="cell-icon cell-myeloid">My</span> MTOR ★↑327% (p=0.034)
+        </div>
+        <div class="stat">LDHA Liver: NS (blood-dominant metabolic checkpoint)</div>
+      </div>
+
+      <div class="layer-card-sm lc-l6">
+        <h4>L6: Differentiation Block (Liver)</h4>
+        <div class="genes">
+          <span class="cell-icon cell-cd4">C4</span> PRDM1 ★↓36% (36/36) | RORC ★↓49%
+        </div>
+        <div class="pval">C10: PRDM1 per-cell 98%</div>
+      </div>
+    </div>
+
+    <!-- BLOOD Compartment -->
+    <div class="compartment blood-comp">
+      <div class="comp-title">🩸 BLOOD</div>
+      <div class="comp-stats">Myeloid-dominant (35.1%) | n=5 donors | 62 IT-specific combinations</div>
+
+      <div class="layer-card-sm lc-l1">
+        <h4>L1: Myeloid Paracrine Suppression</h4>
+        <div class="genes">
+          <span class="cell-icon cell-myeloid">My</span> <b>Blood Myeloid (all 25/25):</b><br>
+          TGFB1 ★↑156% | LGALS9 ★↑94% | LILRB1 ★↑102%<br>
+          SIGLEC10 ★↑138% | AIM2 ★↑1431% | MEFV ★↑201%<br>
+          PYCARD ★↑25% | TGFB1↔LGALS9 ρ=0.726
+        </div>
+        <div class="pval">C10: per-cell 88-95%</div>
+      </div>
+
+      <div class="layer-card-sm lc-l2">
+        <h4>L2: Epigenetic Silencing</h4>
+        <div class="genes">
+          <span class="cell-icon cell-myeloid">My</span> DNMT1 ★↑164% | DNMT3A ★↑348% | TET2 ★↑150%<br>
+          TFAM↔DNMT1 ρ=0.925 (mito-epigenetic coupling)
+        </div>
+        <div class="pval">C10: per-cell 91-96%</div>
+      </div>
+
+      <div class="layer-card-sm lc-l3">
+        <h4>L3: Metabolic Checkpoint</h4>
+        <div class="genes">
+          <span class="cell-icon cell-myeloid">My</span> MTOR ★↑521% but LDHA ★↓36%<br>
+          <span class="cell-icon cell-cd4">C4</span><span class="cell-icon cell-myeloid">My</span> TFAM pan-lineage ↑
+        </div>
+        <div class="stat">mTOR ON → glycolysis OFF = metabolic uncoupling</div>
+        <div class="pval">LDHA: C10 mixed (35% per-cell)</div>
+      </div>
+
+      <div class="layer-card-sm lc-l4">
+        <h4>L4: JAK-STAT Paradox</h4>
+        <div class="genes">
+          <span class="cell-icon cell-myeloid">My</span> JAK1 ★↑128% | STAT1 ★↑200%<br>
+          <span class="cell-icon cell-cd4">C4</span> SOCS1 ★↓67% | SOCS3 ★↓77%
+          <span class="badge badge-it">IT-specific</span><br>
+          <span class="cell-icon cell-cd8">C8</span> SOCS1 ★↓64%<br>
+          JAK1↔SOCS1 ρ=−0.731 (FDR q<0.001)
+        </div>
+        <div class="stat">Brake released yet no effector output → blocked by L2+L3</div>
+        <div class="pval">C10: per-cell 82-96%</div>
+      </div>
+
+      <div class="layer-card-sm lc-l6">
+        <h4>L6: Differentiation Block (Blood)</h4>
+        <div class="genes">
+          <span class="cell-icon cell-cd4">C4</span> PRDM1 ★↓59% | <span class="cell-icon cell-cd8">C8</span> PRDM1 ★↓58%
+        </div>
+        <div class="pval">C10: per-cell 93-95%</div>
+      </div>
+    </div>
+
+    <!-- PAN-TISSUE -->
+    <div class="compartment pan-comp">
+      <div class="comp-title">PAN</div>
+      <div class="comp-stats">Both tissues</div>
+
+      <div class="layer-card-sm lc-l6" style="background:#F5F5F5;">
+        <h4>L6 Summary</h4>
+        <div class="genes">
+          PRDM1↓ in <b>both</b> liver + blood<br><br>
+          Liver CD4T:<br>36/36 (100%)<br><br>
+          Blood CD4T:<br>25/25 (100%)<br><br>
+          Blood CD8T:<br>25/25 (100%)
+        </div>
+      </div>
+
+      <div class="layer-card-sm lc-l2" style="background:#F5F5F5; margin-top:12px;">
+        <h4>L2 Bridge</h4>
+        <div class="genes">
+          DNMT1↑ in<br>both tissues<br><br>
+          Liver: ★p=0.002<br>
+          Blood: ★p=0.008
+        </div>
+      </div>
+
+      <div style="margin-top:16px; text-align:center; font-size:9px; color:#666;">
+        <b>Tissue overlap:</b><br>
+        L2 + L6 operate<br>in both compartments.<br><br>
+        L1, L3, L4:<br>Blood-exclusive<br><br>
+        L5: Liver-exclusive<br>(tissue-opposite)
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Stats Bar -->
+  <div class="bottom-bar">
+    <div class="item"><div class="num">32</div><div class="label">Layer Genes</div></div>
+    <div class="item"><div class="num">31/32</div><div class="label">Significant</div></div>
+    <div class="item"><div class="num">97%</div><div class="label">Sig Rate</div></div>
+    <div class="item"><div class="num">0</div><div class="label">Composition-Driven</div></div>
+    <div class="item"><div class="num">2,020</div><div class="label">FDR Correlations</div></div>
+    <div class="item"><div class="num">114</div><div class="label">IT-Specific</div></div>
+    <div class="item" style="border-left:1px solid rgba(255,255,255,0.3); padding-left:16px;">
+      <div class="num" style="font-size:14px;">Hypothesis-generating</div>
+      <div class="label">Requires functional validation</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

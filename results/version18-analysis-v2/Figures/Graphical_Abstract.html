@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphical Abstract — Six-Layer Effector Suppression</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1200px; height: 900px;
+  font-family: 'DM Sans', sans-serif;
+  background: #FAFBFC;
+  overflow: hidden;
+}
+
+.canvas {
+  width: 1200px; height: 900px;
+  position: relative;
+  background: linear-gradient(135deg, #F8FAFC 0%, #EEF2F7 100%);
+}
+
+/* Title bar */
+.title-bar {
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 72px;
+  background: linear-gradient(90deg, #1B2A4A 0%, #2D4A7A 100%);
+  display: flex; align-items: center; padding: 0 32px;
+}
+.title-bar h1 {
+  font-family: 'DM Serif Display', serif;
+  color: white; font-size: 18px; font-weight: 400; letter-spacing: 0.3px;
+}
+.title-bar .journal {
+  margin-left: auto;
+  color: rgba(255,255,255,0.7); font-size: 12px;
+}
+
+/* Left: Study flow */
+.left-panel {
+  position: absolute; top: 88px; left: 24px; width: 280px;
+}
+.flow-box {
+  background: white; border-radius: 8px; padding: 12px 14px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border-left: 4px solid #2D4A7A;
+}
+.flow-box.highlight { border-left-color: #E64B35; }
+.flow-box h3 { font-size: 11px; color: #2D4A7A; font-weight: 600; margin-bottom: 3px; }
+.flow-box p { font-size: 9.5px; color: #555; line-height: 1.4; }
+.flow-arrow {
+  text-align: center; color: #AAA; font-size: 14px; margin: 2px 0;
+}
+
+/* Center: Six-Layer Model */
+.center-panel {
+  position: absolute; top: 88px; left: 320px; width: 540px;
+}
+.model-title {
+  text-align: center; font-size: 14px; font-weight: 700; color: #1B2A4A;
+  margin-bottom: 10px;
+}
+.model-subtitle {
+  text-align: center; font-size: 10px; color: #777; margin-bottom: 12px;
+}
+
+/* Immune engagement top bar */
+.engage-bar {
+  background: linear-gradient(90deg, #4CAF50, #66BB6A);
+  border-radius: 6px; padding: 8px 16px; margin-bottom: 10px;
+  text-align: center;
+}
+.engage-bar span { color: white; font-size: 10px; font-weight: 600; }
+.engage-genes { color: rgba(255,255,255,0.85); font-size: 9px; display: block; margin-top: 2px; }
+
+/* Layer cards */
+.layers { display: flex; flex-direction: column; gap: 6px; }
+.layer-row {
+  display: flex; align-items: stretch; gap: 6px;
+  min-height: 58px;
+}
+.layer-num {
+  width: 28px; min-width: 28px;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700; color: white;
+}
+.layer-card {
+  flex: 1; border-radius: 6px; padding: 8px 10px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.layer-card h4 { font-size: 10px; font-weight: 600; margin-bottom: 2px; }
+.layer-card .genes { font-size: 8.5px; color: #555; line-height: 1.3; }
+.layer-card .tissue-tag {
+  display: inline-block; font-size: 7.5px; font-weight: 600;
+  padding: 1px 5px; border-radius: 3px; margin-top: 3px;
+}
+
+/* Blood layers */
+.l1 .layer-num { background: #E64B35; }
+.l1 .layer-card { background: #FFF5F3; border: 1px solid #FADBD5; }
+.l1 .tissue-tag { background: #3C5488; color: white; }
+
+.l2 .layer-num { background: #9B59B6; }
+.l2 .layer-card { background: #F8F0FC; border: 1px solid #E8D5F0; }
+.l2 .tissue-tag { background: #3C5488; color: white; }
+
+.l3 .layer-num { background: #F39C12; }
+.l3 .layer-card { background: #FFF8ED; border: 1px solid #FAE5B8; }
+.l3 .tissue-tag { background: #3C5488; color: white; }
+
+.l4 .layer-num { background: #2980B9; }
+.l4 .layer-card { background: #EDF5FC; border: 1px solid #C8DFF0; }
+.l4 .tissue-tag { background: #3C5488; color: white; }
+
+/* Liver layer */
+.l5 .layer-num { background: #E64B35; }
+.l5 .layer-card { background: #FFF5F3; border: 1px solid #FADBD5; }
+.l5 .tissue-tag { background: #E64B35; color: white; }
+
+/* Pan-tissue */
+.l6 .layer-num { background: #1B2A4A; }
+.l6 .layer-card { background: #F0F2F5; border: 1px solid #D5DAE2; }
+.l6 .tissue-tag { background: #666; color: white; }
+
+/* Bottom bar */
+.block-bar {
+  background: linear-gradient(90deg, #C0392B, #E74C3C);
+  border-radius: 6px; padding: 8px 16px; margin-top: 10px;
+  text-align: center;
+}
+.block-bar span { color: white; font-size: 11px; font-weight: 700; }
+.block-bar .sub { color: rgba(255,255,255,0.8); font-size: 9px; display: block; margin-top: 2px; }
+
+/* Right: Key numbers */
+.right-panel {
+  position: absolute; top: 88px; right: 24px; width: 280px;
+}
+.stat-box {
+  background: white; border-radius: 8px; padding: 10px 14px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.stat-box h3 { font-size: 10px; color: #2D4A7A; font-weight: 600; margin-bottom: 4px; }
+.stat-row {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 9px; color: #555; padding: 2px 0;
+  border-bottom: 1px solid #F0F0F0;
+}
+.stat-row:last-child { border-bottom: none; }
+.stat-val { font-weight: 600; color: #1B2A4A; }
+
+.validation-box {
+  background: #E8F5E9; border-radius: 8px; padding: 10px 14px;
+  margin-bottom: 8px; border: 1px solid #C8E6C9;
+}
+.validation-box h3 { font-size: 10px; color: #2E7D32; font-weight: 600; margin-bottom: 4px; }
+.validation-box p { font-size: 9px; color: #444; line-height: 1.4; }
+
+.conclusion-box {
+  background: #1B2A4A; border-radius: 8px; padding: 12px 14px;
+  color: white;
+}
+.conclusion-box h3 { font-size: 10px; font-weight: 600; margin-bottom: 4px; }
+.conclusion-box p { font-size: 9px; line-height: 1.4; opacity: 0.9; }
+
+/* Arrow connectors */
+.connect-arrow {
+  position: absolute;
+  color: #999; font-size: 20px;
+}
+</style>
+</head>
+<body>
+<div class="canvas">
+  <!-- Title Bar -->
+  <div class="title-bar">
+    <h1>Six Concurrent Layers of Effector Suppression in the Immune Tolerant Phase of Chronic Hepatitis B</h1>
+    <span class="journal">Tissue-Separated scRNA-seq Reanalysis | GSE182159</span>
+  </div>
+
+  <!-- LEFT: Study Flow -->
+  <div class="left-panel">
+    <div class="flow-box">
+      <h3>Dataset</h3>
+      <p>GSE182159: 243,000 cells<br>23 donors (NL=6, IT=6, IA=5, AR=3, CR=3)<br>Paired liver + blood</p>
+    </div>
+    <div class="flow-arrow">▼</div>
+    <div class="flow-box highlight">
+      <h3>Key Innovation</h3>
+      <p><b>Tissue separation:</b> All analyses performed independently for liver and blood. Combined analysis masks 39% of tissue-specific signals.</p>
+    </div>
+    <div class="flow-arrow">▼</div>
+    <div class="flow-box">
+      <h3>Analysis Pipeline</h3>
+      <p>29 AUCell pathways (179 genes)<br>196 individual genes (C3)<br>148 refined panel (C5)<br>Gene-gene correlations (C7)<br>Oaxaca-Blinder verification (C10)</p>
+    </div>
+    <div class="flow-arrow">▼</div>
+    <div class="flow-box">
+      <h3>Tissue Architecture</h3>
+      <p><b>Liver:</b> NK-dominant (43.9%)<br><b>Blood:</b> Myeloid-dominant (35.1%)<br>9 tissue-opposite pathway changes</p>
+    </div>
+    <div class="flow-arrow">▼</div>
+    <div class="flow-box">
+      <h3>Statistics</h3>
+      <p>Donor = unit (not cell)<br>Mann-Whitney U tests<br>Tier 2 (nominal p<0.05)<br>C7: 2,020 FDR-surviving correlations</p>
+    </div>
+  </div>
+
+  <!-- CENTER: Six-Layer Model -->
+  <div class="center-panel">
+    <div class="model-title">Six-Layer Effector Suppression Architecture</div>
+    <div class="model-subtitle">Active immune engagement → suppressed at 6 independent checkpoints</div>
+    
+    <div class="engage-bar">
+      <span>✦ ACTIVE IMMUNE ENGAGEMENT ✦</span>
+      <span class="engage-genes">HLA class II↑ (35/36) | JAK1 pan-immune↑ (6 lineages) | IFN response↑ (MX1/ISG15) | MTOR↑</span>
+    </div>
+
+    <div class="layers">
+      <div class="layer-row l1">
+        <div class="layer-num">L1</div>
+        <div class="layer-card">
+          <h4>Myeloid Paracrine Suppression</h4>
+          <div class="genes">TGFB1 ↑156% | LGALS9 ↑94% | AIM2 ↑1431% | MEFV ↑201%</div>
+          <span class="tissue-tag">BLOOD</span>
+        </div>
+      </div>
+      <div class="layer-row l2">
+        <div class="layer-num">L2</div>
+        <div class="layer-card">
+          <h4>Epigenetic Silencing</h4>
+          <div class="genes">DNMT1 ↑164% | DNMT3A ↑348% | TET2 ↑150% | TFAM↔DNMT1 ρ=0.925</div>
+          <span class="tissue-tag">BLOOD + LIVER</span>
+        </div>
+      </div>
+      <div class="layer-row l3">
+        <div class="layer-num">L3</div>
+        <div class="layer-card">
+          <h4>Metabolic Checkpoint</h4>
+          <div class="genes">MTOR ↑521% but LDHA ↓36% → glycolytic switch blocked</div>
+          <span class="tissue-tag">BLOOD</span>
+        </div>
+      </div>
+      <div class="layer-row l4">
+        <div class="layer-num">L4</div>
+        <div class="layer-card">
+          <h4>JAK-STAT Paradox</h4>
+          <div class="genes">JAK1↑ + SOCS1↓67% + SOCS3↓77% → brake released, no effector output | ρ=−0.731</div>
+          <span class="tissue-tag">BLOOD</span>
+        </div>
+      </div>
+      <div class="layer-row l5">
+        <div class="layer-num">L5</div>
+        <div class="layer-card">
+          <h4>T Cell Exhaustion Programming</h4>
+          <div class="genes">TOX ↑101% | LAYN ↑431% | CTLA4 ↑171% | TIGIT ↑124% — all tissue-opposite</div>
+          <span class="tissue-tag">LIVER</span>
+        </div>
+      </div>
+      <div class="layer-row l6">
+        <div class="layer-num">L6</div>
+        <div class="layer-card">
+          <h4>Terminal Differentiation Block</h4>
+          <div class="genes">PRDM1 ↓36% (36/36 consistency) | RORC ↓49%</div>
+          <span class="tissue-tag">PAN-TISSUE</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-bar">
+      <span>✕ EFFECTOR CONVERSION BLOCKED ✕</span>
+      <span class="sub">No IFNγ, no granzyme B upregulation, no cytokine production despite upstream activation</span>
+    </div>
+  </div>
+
+  <!-- RIGHT: Key Numbers & Validation -->
+  <div class="right-panel">
+    <div class="stat-box">
+      <h3>Six-Layer Evidence</h3>
+      <div class="stat-row"><span>Genes tested</span><span class="stat-val">32 (Table 6)</span></div>
+      <div class="stat-row"><span>Significant (p<0.05)</span><span class="stat-val">31/32 (97%)</span></div>
+      <div class="stat-row"><span>C10 per-cell validated</span><span class="stat-val">46 ROBUST + 17 VALID</span></div>
+      <div class="stat-row"><span>Composition-driven</span><span class="stat-val">0 (zero)</span></div>
+    </div>
+
+    <div class="stat-box">
+      <h3>IT-Specific Markers</h3>
+      <div class="stat-row"><span>Liver combinations</span><span class="stat-val">52</span></div>
+      <div class="stat-row"><span>Blood combinations</span><span class="stat-val">62</span></div>
+      <div class="stat-row"><span>Total IT-specific</span><span class="stat-val">114</span></div>
+      <div class="stat-row"><span>Pattern types</span><span class="stat-val">IT-spec + Chronic</span></div>
+    </div>
+
+    <div class="stat-box">
+      <h3>Correlation Networks (C7)</h3>
+      <div class="stat-row"><span>Pairs tested</span><span class="stat-val">19,836</span></div>
+      <div class="stat-row"><span>FDR survived</span><span class="stat-val">2,020</span></div>
+      <div class="stat-row"><span>TFAM↔DNMT1</span><span class="stat-val">ρ=0.925</span></div>
+      <div class="stat-row"><span>JAK1↔SOCS1</span><span class="stat-val">ρ=−0.731</span></div>
+    </div>
+
+    <div class="validation-box">
+      <h3>✓ Simpson's Paradox Free</h3>
+      <p>Oaxaca-Blinder: 99.6% of NL→IT changes are per-cell dominant. All 6-layer genes validated (0 composition-driven).</p>
+    </div>
+
+    <div class="conclusion-box">
+      <h3>Conclusion</h3>
+      <p>IT phase represents <b>active multi-layered suppression</b>, not passive unresponsiveness. Six concurrent tissue-distributed mechanisms prevent effector conversion despite active antigen recognition and signaling initiation. Hypothesis-generating; requires functional validation.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

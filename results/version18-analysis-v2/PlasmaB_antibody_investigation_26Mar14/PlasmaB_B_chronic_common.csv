@@ -1,0 +1,27 @@
+﻿Gene,Lineage,Tissue,NL_IT,NL_IA,NL_CR,NL_AR,chronic_n,direction,consistent
+AR,PlasmaB,Blood,*from_zero p=0.007,*from_zero p=0.042,from_zero p=0.302,(t)from_zero p=0.079,2,+,TRUE
+ATP5F1B,PlasmaB,Blood,*+25% p=0.016,+27% p=0.286,*+22% p=0.036,(t)+28% p=0.071,2,+,TRUE
+BCL2,B,Blood,*+84% p=0.008,(t)+85% p=0.064,*+161% p=0.036,+122% p=0.143,2,+,TRUE
+BCL6,B,Blood,*+218% p=0.012,*+402% p=0.019,+59% p=0.764,+64% p=0.549,2,+,TRUE
+CASP8,PlasmaB,Liver,*+220% p=0.022,*+208% p=0.022,+158% p=0.243,+41% p=0.697,2,+,TRUE
+CD27,B,Liver,*+125% p=0.017,*+114% p=0.030,+46% p=0.714,(t)+163% p=0.095,2,+,TRUE
+CD69,B,Liver,*-27% p=0.017,(t)-27% p=0.052,*-34% p=0.048,-31% p=0.262,2,-,TRUE
+CDK1,B,Blood,*+1073% p=0.045,*+3359% p=0.030,+358% p=0.305,+1901% p=0.172,2,+,TRUE
+DNMT1,PlasmaB,Liver,(t)+162% p=0.082,*+237% p=0.009,*+143% p=0.048,+26% p=0.548,2,+,TRUE
+FCER1G,PlasmaB,Blood,*+515% p=0.021,(t)+437% p=0.065,*+379% p=0.036,+93% p=0.230,2,+,TRUE
+IL2RA,PlasmaB,Liver,*from_zero p=0.015,*from_zero p=0.048,from_zero p=0.239,-0% p=1.000,2,+,TRUE
+IRF4,PlasmaB,Liver,*+150% p=0.030,*+148% p=0.030,+75% p=0.714,+94% p=0.167,2,+,TRUE
+JAK1,PlasmaB,Blood,*+134% p=0.016,+97% p=0.191,*+240% p=0.036,(t)+80% p=0.071,2,+,TRUE
+JAK3,PlasmaB,Blood,*+477% p=0.011,*+805% p=0.034,(t)+733% p=0.067,+342% p=0.127,2,+,TRUE
+LEF1,B,Blood,+460% p=0.239,*+746% p=0.015,*+1071% p=0.026,(t)+768% p=0.057,2,+,TRUE
+MT-ND2,PlasmaB,Blood,*+74% p=0.008,*+54% p=0.032,*+55% p=0.036,+35% p=0.143,3,+,TRUE
+NDUFB1,PlasmaB,Blood,-15% p=0.222,*-40% p=0.016,*-74% p=0.036,(t)-45% p=0.071,2,-,TRUE
+PINK1,B,Blood,*+291% p=0.021,*+338% p=0.019,*+294% p=0.036,(t)+251% p=0.072,3,+,TRUE
+RB1,B,Blood,*+73% p=0.032,+66% p=0.191,*+113% p=0.036,+67% p=0.143,2,+,TRUE
+RPTOR,B,Liver,+296% p=0.262,*+229% p=0.021,*+241% p=0.049,(t)+231% p=0.088,2,+,TRUE
+SELL,B,Blood,(t)+36% p=0.095,*+43% p=0.032,*+45% p=0.036,(t)+50% p=0.071,2,+,TRUE
+TET2,B,Liver,*+422% p=0.008,*+209% p=0.035,(t)+236% p=0.092,+128% p=0.154,2,+,TRUE
+TGFB1,PlasmaB,Blood,*+198% p=0.016,*+216% p=0.016,+78% p=0.250,+96% p=0.143,2,+,TRUE
+TGFBR2,PlasmaB,Blood,*+1706% p=0.010,*+1312% p=0.030,*+1930% p=0.026,(t)+579% p=0.057,3,+,TRUE
+TYROBP,PlasmaB,Blood,*+911% p=0.008,*+775% p=0.016,*+620% p=0.036,+171% p=0.393,3,+,TRUE
+VEGFB,PlasmaB,Blood,*+970% p=0.011,(t)+538% p=0.062,*+557% p=0.033,+286% p=0.127,2,+,TRUE

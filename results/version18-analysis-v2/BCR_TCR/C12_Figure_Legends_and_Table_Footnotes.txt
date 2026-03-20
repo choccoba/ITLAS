@@ -1,0 +1,87 @@
+
+============================================================
+FIGURE LEGENDS
+============================================================
+
+Figure 8. BCR/TCR Repertoire Analysis Reveals Clonal Arrest with Active B Cell Engagement in IT.
+(A) TCR clonality (1 − normalized Shannon entropy) in blood across disease groups.
+IT showed significantly reduced clonal diversity compared with NL
+(NL 0.585 → IT 0.351, ★p=0.032, 23/25 donor-pair consistency),
+representing the only IT-specific BCR/TCR finding (NL→IA p=0.064, NS).
+Each dot represents one donor; horizontal bars indicate group means.
+Blue triangles = blood. Mann-Whitney U test; ★p<0.05.
+(B) B_c04-COCH proportion within B+PlasmaB cells in liver.
+COCH+ B cells showed chronic-persistent expansion from IT
+(NL 1.3% → IT 7.1%, ★p=0.014, 29/30; NL→IA ★p=0.022),
+indicating active B cell engagement beginning in IT and persisting through IA.
+Red circles = liver.
+(C) IgD isotype percentage among BCR+ cells in blood.
+IgD+ (naive/unswitched) B cells showed chronic-persistent depletion
+(NL 17.7% → IT 2.2%, ★p=0.016, 24/25; NL→IA ★p=0.016),
+indicating accelerated transition from naive to activated B cell compartment.
+(D) plasmaB_c01-SDC1 proportion within B+PlasmaB cells in liver.
+Mature plasma cells (SDC1/CD138+) were maintained in IT (NL 32.5% vs IT 26.0%, NS)
+but collapsed at the IT→IA transition (IT 26.0% → IA 5.0%, ★p=0.008, 25/25 consistency),
+representing a transition event rather than an IT-specific feature.
+Panels: 4 (A–D)
+
+
+Supplementary Figure S8. Additional BCR/TCR Repertoire Findings.
+(A) Maximum BCR clone size in blood across disease groups.
+IT showed significantly increased top clone size compared with NL
+(NL 1.0 → IT 3.0 cells, ★p=0.006, 25/25), a chronic-persistent pattern
+(NL→IA ★p=0.010), indicating minimal but statistically significant
+clonal expansion in blood BCR beginning at IT.
+(B) B_c07-FCRL5 (exhausted/atypical memory B cell) proportion in liver.
+FCRL5+ B cells showed a trend toward IT enrichment
+(NL 13.0% → IT 28.2%, †p=0.052, 26/30), suggesting
+accumulation of functionally impaired B cells in the hepatic microenvironment.
+(C) plasmaB_c03-MKI67 (proliferating plasma cell) proportion in liver.
+MKI67+ plasma cells showed a trend toward IT depletion
+(NL 8.2% → IT 1.4%, †p=0.082, 25/30), consistent with
+suppressed plasma cell proliferation during the IT phase.
+(D) BCR isotype distribution (IgM, IgG, IgA, IgD) by stage and tissue.
+Liver showed higher class-switched (IgG+IgA) proportions than blood across
+all stages. In blood, IgD depletion at IT (★p=0.016) was the most prominent
+isotype shift. Vertical dashed line separates liver (left) from blood (right).
+Blue triangles = blood; red circles = liver. Mann-Whitney U test; ★p<0.05, †p<0.10.
+Panels: 4 (A–D)
+
+
+============================================================
+TABLE FOOTNOTES
+============================================================
+
+Table 8. BCR/TCR Donor-Level Repertoire Metrics Across the HBV Disease Spectrum.
+Panel A: BCR repertoire metrics. Panel B: TCR repertoire metrics.
+Values represent donor-level means ± SD. Clonality = 1 − (Shannon entropy / log2(n_unique_clones));
+range 0 (all singletons) to 1 (single dominant clone).
+Singleton% = percentage of clones represented by a single cell.
+Class-switched% = IgG% + IgA%. TopCloneSize = number of cells in the largest clone.
+BCR data represent heavy chain (IGH) only; TCR data represent alpha chain (TRA) only.
+CR group had no BCR/TCR V(D)J library data available.
+AR data (n=1 for liver; n=1 for blood in BCR; n=1 each in TCR) are shown
+for reference but excluded from statistical testing due to insufficient sample size.
+★p<0.05; †p<0.10; Mann-Whitney U test, two-sided.
+Abbreviations: NL, normal liver; IT, immune tolerant; IA, immune active;
+AR, acute resolved; CR, chronic resolved.
+
+
+Supplementary Table S6. Complete Donor-Level BCR/TCR Metrics.
+Individual donor values for all BCR (Sheet 1) and TCR (Sheet 2) repertoire metrics,
+and B/PlasmaB subcluster proportions (Sheet 3), separated by tissue (liver, blood)
+and disease group. These data underlie Table 8 and Figures 8, S8.
+Clonality calculated using safe Shannon entropy (log2(0) protected).
+n_unique_clones = number of distinct clonotypes per donor per tissue.
+
+
+Supplementary Table S7. IT→IA Transition BCR/TCR Analysis.
+Mann-Whitney U test results for 52 comparisons across BCR repertoire (22 tests),
+TCR repertoire (10 tests), and B/PlasmaB subcluster proportions (20 tests),
+each tested in liver and blood separately. For each metric, three comparisons
+are shown: NL→IT, IT→IA, and NL→IA. Pattern classification:
+IT-REVERSAL (NL→IT and IT→IA significant, opposite directions),
+IT-AMPLIFIED (same directions), IT-SPECIFIC-RESOLVED (NL→IT sig, NL→IA NS),
+IA-EMERGENT (NL→IT NS, IT→IA and NL→IA sig), TRANSITION (IT→IA sig only),
+CHRONIC-PERSISTENT (NL→IT and NL→IA sig), NS (none significant).
+★p<0.05; †p<0.10; Mann-Whitney U test, two-sided.
